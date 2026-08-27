@@ -1,8 +1,8 @@
 # AI Agents: comportamento, multi-agentes e A2A
 
-Apresentação de 1 hora para aprofundamento conceitual em agentes: o que caracteriza agência, como um agente observa/representa/decide/age, por que arquiteturas diferentes geram comportamentos distintos e como isso escala para colaboração multi-agent.
+Apresentação de 1 hora para aprofundamento conceitual sobre agentes: o que caracteriza agência, como agentes percebem/representam/decidem/agem, como diferentes arquiteturas produzem comportamentos distintos e como isso escala para colaboração multi-agent.
 
-A apresentação mantém exatamente os slides 6 a 11 da versão `master` do repositório original. Esses slides são carregados a partir de `reference.html`, preservando o bloco de Multi-Agents e A2A sem alterações, enquanto o restante do deck foi reorganizado ao redor da estrutura equilibrada definida para a aula.
+A apresentação mantém exatamente os slides 6 a 11 da versão `master` do repositório original via `reference.html`. O restante do deck foi reorganizado em torno desse bloco fixo para manter a narrativa coerente.
 
 ---
 
@@ -22,33 +22,28 @@ http://localhost:3000
 
 ---
 
-## Estrutura dos slides
+## Estrutura final dos slides
 
-### Parte 1 — Fundamentos e comportamento agentic
+### Parte 01 — Fundamentos de agência
 - **Slide 01:** AI Agents — capa e framing da aula.
-- **Slide 02:** Estrutura da aula — roteiro de 60 minutos e fio condutor: perceber, representar, decidir e agir.
-- **Slide 03:** O que torna algo um agente? — diferença entre automação, workflow dinâmico e agente.
-- **Slide 04:** Agente, ambiente e loop — observation, state, goal, action e feedback do ambiente.
-- **Slide 05:** Comportamentos de agentes — reactive, model-based, goal-directed, deliberative, planning/replanning e ponte para multi-agent.
+- **Slide 02:** Estrutura da aula — três partes e fio condutor.
+- **Slide 03:** O que torna algo um agente? — automação × workflow dinâmico × agente.
+- **Slide 04:** Agente, ambiente e loop — observation, state, goal, action e feedback loop.
+- **Slide 05:** Comportamentos de agentes — reactive, model-based, goal-directed, deliberative e planning/replanning.
 
-### Parte 2 — Multi-Agents e A2A preservados
-- **Slides 06 a 11:** preservados exatamente da branch `master`, cobrindo limites de um agente único, problema de comunicação, entrada no A2A, primitivas do protocolo e caso do assistente de viagem.
+### Parte 02 — Multi-Agent & A2A preservados
+- **Slides 06 a 11:** preservados exatamente da branch `master`, cobrindo limites de um agente único, problema de comunicação, introdução ao A2A, primitivas e caso do assistente de viagem.
 
-### Parte 3 — Sistemas agentic na prática
-- **Slide 12:** Coordenação — divisor após o exemplo A2A.
+### Parte 03 — Sistemas agentic em operação
+- **Slide 12:** divisor visual da Parte 03.
 - **Slide 13:** Coordination patterns — supervisor, handoff e collaborative.
-- **Slide 14:** Dynamic workflows — static, conditional, dynamic e principais workflow patterns.
-- **Slide 15:** Production reality — persistence, retries, timeouts, idempotency, permissions, observability e human approval.
-- **Slide 16:** Modelo mental final — síntese visual do agent loop e dos comportamentos discutidos.
+- **Slide 14:** Dynamic workflows — static, conditional, dynamic e workflow patterns.
+- **Slide 15:** Production reality — bounded autonomy, permissions, retries, timeouts, idempotency e observability.
+- **Slide 16:** Modelo mental final — síntese do loop agentic.
 
 ---
 
-## Foco da aula
+## Observações de design
 
-O foco não é ensinar frameworks nem transformar A2A no tema principal. O foco é construir um modelo mental sólido sobre agentes:
-
-```text
-Agent → Environment → Loop → State/Goals/Actions → Behaviors → Reactive/Deliberative → Planning/Replanning → Multi-Agent/A2A → Coordination → Dynamic Workflows → Production → Synthesis
-```
-
-A2A, workflow patterns e production scenarios entram como aplicações e diferenciais, não como o centro da aula.
+- Slides editáveis seguem o estilo editorial do deck original: fundo claro/azul/preto, tipografia Inter, azul `#350EFF`, cards amplos, diagramas visuais e baixa densidade textual.
+- Slides 6–11 não devem ser alterados diretamente; qualquer ajuste neles deve ser feito apenas se a exigência de preservação for removida.
