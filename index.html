@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full bg-[#0A0A14] text-[#272727] antialiased select-none">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A2A: Como Agentes de IA Colaboram | Inteli Academy</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#350EFF',
+              dark: '#2708CC',
+              light: '#5A38FF',
+            },
+            deepBlack: '#0A0A14',
+            offWhite: '#F5F5F7',
+            graphite: '#272727',
+            textGray: '#5D5D66',
+            softGray: '#E6E6EC',
+            lavender: '#EEEDF8',
+            accentYellow: '#FFE57F',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Menlo', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --slide-w: 1920px;
+      --slide-h: 1080px;
+      --electric-blue: #350EFF;
+      --deep-black: #0A0A14;
+      --off-white: #F5F5F7;
+      --graphite: #272727;
+      --gray: #5D5D66;
+      --soft-gray: #E6E6EC;
+      --lavender: #EEEDF8;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: var(--deep-black);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    #presentation-viewport {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    #slide-stage {
+      width: var(--slide-w);
+      height: var(--slide-h);
+      flex-shrink: 0;
+      position: relative;
+      transform-origin: center center;
+      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
+      background-color: var(--off-white);
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+      box-sizing: border-box;
+    }
+
+    .slide.active {
+      display: flex;
+      opacity: 1;
+      z-index: 10;
+    }
+
+    /* Print styling for direct PDF export */
+    @media print {
+      body {
+        overflow: visible !important;
+        background: transparent !important;
+      }
+      #presentation-viewport {
+        position: static !important;
+        display: block !important;
+      }
+      #slide-stage {
+        transform: none !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+      .slide {
+        display: flex !important;
+        opacity: 1 !important;
+        position: relative !important;
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+        width: 100vw !important;
+        height: 56.25vw !important; /* 16:9 ratio */
+        margin-bottom: 0 !important;
+      }
+      #controls-bar, #overview-modal, #help-modal {
+        display: none !important;
+      }
+      @page {
+        size: 16in 9in landscape;
+        margin: 0;
+      }
+    }
+
+    /* Custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(93, 93, 102, 0.3);
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="h-screen w-screen overflow-hidden bg-[#0A0A14] text-[#272727]">
+
+  <!-- Main Viewport that scales the 1920x1080 slide stage to fit browser window -->
+  <main id="presentation-viewport">
+    <div id="slide-stage" class="rounded-none overflow-hidden">
+
+      <!-- ==========================================
+           SLIDE 1: CAPA (Electric Blue Background)
+           ========================================== -->
+      <section class="slide active flex-col justify-between p-24 bg-[#350EFF] text-white relative overflow-hidden" data-slide="1" data-title="Capa">
+        <!-- Abstract geometric line vectors -->
+        <svg class="absolute right-0 top-0 w-[950px] h-full pointer-events-none opacity-20" viewBox="0 0 950 1080" fill="none">
+          <polygon points="120,0 950,0 950,600 350,1080 0,720" stroke="#EEEDF8" stroke-width="2" />
+          <line x1="280" y1="0" x2="850" y2="1080" stroke="#EEEDF8" stroke-width="1.5" stroke-dasharray="8 8" />
+          <polygon points="400,150 900,100 820,850 250,550" stroke="#FFFFFF" stroke-width="1.5" />
+          <circle cx="680" cy="420" r="280" stroke="#EEEDF8" stroke-width="1.5" />
+        </svg>
+
+        <!-- Top metadata -->
+        <div class="relative z-10">
+          <div class="text-3xl font-bold tracking-tight text-white mb-2">Inteli Academy</div>
+          <div class="text-base font-bold tracking-[0.2em] text-[#EEEDF8] uppercase">FUNDAMENTOS DE IA APLICADA</div>
+        </div>
+
+        <!-- Center Main Title -->
+        <div class="relative z-10 my-auto max-w-5xl">
+          <h1 class="text-[120px] font-black tracking-tight text-white leading-none mb-6">
+            A2A
+          </h1>
+          <h2 class="text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            Como agentes de IA colaboram na prática
+          </h2>
+          <p class="text-3xl text-[#EEEDF8] font-normal leading-relaxed max-w-3xl">
+            O protocolo aberto para agentes descobrirem capacidades, delegarem tarefas e trocarem resultados.
+          </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="relative z-10 flex items-center justify-between pt-8 border-t border-white/20 text-[#EEEDF8] text-base">
+          <div class="font-semibold tracking-wide">Protocolo A2A (Agent-to-Agent)</div>
+          <span class="text-white font-bold text-lg">01</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 2: AGENDA (Estrutura Simples e Direta)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="2" data-title="Visão Geral">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">ESTRUTURA DA AULA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">O caminho da colaboração entre agentes</h2>
+        </div>
+
+        <!-- Editorial 3-row list -->
+        <div class="my-auto divide-y divide-[#E6E6EC] border-y border-[#E6E6EC]">
+          <!-- Row 1 -->
+          <div class="flex items-center justify-between py-8">
+            <div class="flex items-center gap-10">
+              <span class="text-4xl font-extrabold text-[#350EFF] w-12">01</span>
+              <span class="text-3xl font-bold text-[#272727]">O Ponto de Partida</span>
+            </div>
+            <span class="text-base font-bold tracking-[0.15em] text-[#5D5D66] uppercase">O QUE É UM AGENTE, CHATBOT × AGENTE & LIMITES DO MODELO ÚNICO</span>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="flex items-center justify-between py-8">
+            <div class="flex items-center gap-10">
+              <span class="text-4xl font-extrabold text-[#350EFF] w-12">02</span>
+              <span class="text-3xl font-bold text-[#272727]">A2A: Como o Protocolo Funciona</span>
+            </div>
+            <span class="text-base font-bold tracking-[0.15em] text-[#350EFF] uppercase">O PASSO A PASSO NA PRÁTICA: O CASO DO ASSISTENTE DE VIAGEM</span>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="flex items-center justify-between py-8">
+            <div class="flex items-center gap-10">
+              <span class="text-4xl font-extrabold text-[#350EFF] w-12">03</span>
+              <span class="text-3xl font-bold text-[#272727]">Arquiteturas, Workflows & Frameworks</span>
+            </div>
+            <span class="text-base font-bold tracking-[0.15em] text-[#5D5D66] uppercase">A2A × MCP, PADRÕES AGÊNTICOS, TOPOLOGIAS E FRAMEWORKS</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center text-base text-[#5D5D66]">
+          <span class="font-medium">Roteiro de Apresentação</span>
+          <span class="font-bold text-lg">02</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 3: DIVISOR 1
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#0A0A14] text-white relative overflow-hidden" data-slide="3" data-title="Seção 1">
+        <div class="text-base font-bold tracking-[0.2em] text-[#350EFF] uppercase">PARTE 01</div>
+
+        <div class="my-auto max-w-4xl">
+          <div class="text-[140px] font-black text-[#350EFF] leading-none mb-4">1</div>
+          <h2 class="text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">Por que precisamos de mais de um agente?</h2>
+          <p class="text-2xl text-[#5D5D66] font-semibold tracking-wide uppercase">
+            QUANDO UMA TAREFA FICA GRANDE DEMAIS PARA UM ÚNICO MODELO
+          </p>
+        </div>
+
+        <div class="flex justify-between items-center text-base text-[#5D5D66]">
+          <span class="font-semibold uppercase tracking-wider">O PONTO DE PARTIDA</span>
+          <span class="font-bold text-lg">03</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 04: O QUE É UM AGENTE DE IA? (CHATBOT VS AGENTE)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="4" data-title="O que é um Agente de IA?">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-black uppercase tracking-[0.2em] text-[#350EFF]">CONCEITO FUNDAMENTAL</span>
+          <h2 class="text-5xl font-black text-[#272727] tracking-tight mt-1.5">O que é um Agente de IA? (Chatbot × Agente)</h2>
+          <p class="text-[#5D5D66] text-xl font-medium mt-1">A evolução de modelos que apenas conversam para sistemas autônomos que executam ações.</p>
+        </div>
+
+        <!-- 2 Panels: Chatbot vs Agente -->
+        <div class="grid grid-cols-2 gap-10 my-auto">
+          
+          <!-- Chatbot Tradicional (Passivo) -->
+          <div class="bg-white p-10 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[390px]">
+            <div>
+              <div class="text-xs font-black uppercase tracking-[0.15em] text-[#5D5D66] mb-2">MODELO PASSIVO (TEXTO EM, TEXTO FORA)</div>
+              <h3 class="text-3xl font-black text-[#272727] mb-1">Chatbot Tradicional</h3>
+              <div class="text-sm font-bold text-[#5D5D66] mb-4 uppercase">"Diz como resolver o problema"</div>
+              <ul class="space-y-3 text-base text-[#5D5D66] leading-relaxed">
+                <li>• <strong>Modo de Ação:</strong> Espera passivamente uma pergunta do usuário para gerar uma resposta textual.</li>
+                <li>• <strong>Sem Braços (Isolado):</strong> Não acessa APIs, não roda código no computador e não toma decisões externas.</li>
+                <li>• <strong>Fim do Turno:</strong> A interação morre assim que o texto é exibido na tela.</li>
+              </ul>
+            </div>
+            <div class="text-sm font-bold text-[#5D5D66] pt-3 border-t border-[#E6E6EC]">Geração de Conteúdo Estático</div>
+          </div>
+
+          <!-- Agente de IA (Ativo & Autônomo) -->
+          <div class="bg-white p-10 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[390px]">
+            <div>
+              <div class="text-xs font-black uppercase tracking-[0.15em] text-[#350EFF] mb-2">SISTEMA AUTÔNOMO (ORIENTADO A METAS)</div>
+              <h3 class="text-3xl font-black text-[#272727] mb-1">Agente de IA</h3>
+              <div class="text-sm font-bold text-[#350EFF] mb-4 uppercase">"Resolve o problema por você no mundo real"</div>
+              <ul class="space-y-3 text-base text-[#272727] font-medium leading-relaxed">
+                <li>• <strong>Orientado a Metas:</strong> Recebe um objetivo amplo e decompõe em plano de ação de múltiplas etapas (ReAct).</li>
+                <li>• <strong>Usa Ferramentas (Tool Calling):</strong> Lê arquivos, executa comandos bash, consulta bancos e chama APIs.</li>
+                <li>• <strong>Autocorreção:</strong> Testa hipóteses, detecta erros, ajusta o plano sozinho e entrega o resultado final.</li>
+              </ul>
+            </div>
+            <div class="text-sm font-bold text-[#350EFF] pt-3 border-t border-[#E6E6EC]">Execução e Tomada de Decisão</div>
+          </div>
+
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-base font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">FÓRMULA DO AGENTE</span>
+            <span class="text-xl text-[#272727]"><strong>Agente de IA</strong> = LLM (Raciocínio) + Memória (Contexto) + Ferramentas (Ação) + Autonomia (Loop de Decisão).</span>
+          </div>
+          <span class="font-bold text-base text-[#5D5D66]">04</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 05: AGENTES NA PRÁTICA (EXEMPLOS REAIS DO MERCADO)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="5" data-title="Agentes no Mundo Real">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-black uppercase tracking-[0.2em] text-[#350EFF]">ESTADO DA ARTE</span>
+          <h2 class="text-5xl font-black text-[#272727] tracking-tight mt-1.5">Agentes no mundo real: Do código à operação</h2>
+          <p class="text-[#5D5D66] text-xl font-medium mt-1">Exemplos concretos de como agentes autônomos já operam tarefas completas hoje.</p>
+        </div>
+
+        <!-- 4 Grid Cards -->
+        <div class="grid grid-cols-4 gap-6 my-auto">
+          
+          <!-- Card 1: Claude Code / Coding Agents -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[370px]">
+            <div>
+              <h3 class="text-2xl font-black text-[#272727] tracking-tight">Claude Code</h3>
+              <div class="text-xs font-bold uppercase tracking-wider text-[#350EFF] mt-1.5 mb-3">Agente de Terminal & Código</div>
+              <p class="text-sm text-[#5D5D66] leading-relaxed">
+                Opera diretamente no terminal: lê repositórios inteiros, edita múltiplos arquivos, roda testes unitários, corrige bugs e cria commits e PRs sozinho.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#E6E6EC]">
+              <span class="text-xs font-black uppercase tracking-wider text-[#350EFF]">Habilidade Central:</span>
+              <p class="text-xs font-bold text-[#272727] mt-0.5">Execução direta em Shell & Git</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Engenharia de Software Autônoma (Devin / Cursor) -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[370px]">
+            <div>
+              <h3 class="text-2xl font-black text-[#272727] tracking-tight">Devin & Cursor</h3>
+              <div class="text-xs font-bold uppercase tracking-wider text-[#350EFF] mt-1.5 mb-3">Engenharia Autônoma</div>
+              <p class="text-sm text-[#5D5D66] leading-relaxed">
+                Recebem uma issue do GitHub ou instrução do desenvolvedor, navegam por dezenas de arquivos do projeto, diagnosticam o problema e aplicam o patch completo.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#E6E6EC]">
+              <span class="text-xs font-black uppercase tracking-wider text-[#350EFF]">Habilidade Central:</span>
+              <p class="text-xs font-bold text-[#272727] mt-0.5">Resolução autônoma de bugs</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Deep Research -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[370px]">
+            <div>
+              <h3 class="text-2xl font-black text-[#272727] tracking-tight">Deep Research</h3>
+              <div class="text-xs font-bold uppercase tracking-wider text-[#350EFF] mt-1.5 mb-3">Pesquisa & Síntese Profunda</div>
+              <p class="text-sm text-[#5D5D66] leading-relaxed">
+                Navega pela internet abrindo centenas de links em paralelo, cruza dados financeiros, acadêmicos ou jurídicos e compila relatórios analíticos exaustivos.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#E6E6EC]">
+              <span class="text-xs font-black uppercase tracking-wider text-[#350EFF]">Habilidade Central:</span>
+              <p class="text-xs font-bold text-[#272727] mt-0.5">Pesquisa profunda em minutos</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Agentes Corporativos / Enterprise -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[370px]">
+            <div>
+              <h3 class="text-2xl font-black text-[#272727] tracking-tight">Agentes de Negócio</h3>
+              <div class="text-xs font-bold uppercase tracking-wider text-[#350EFF] mt-1.5 mb-3">Operações & Workflows</div>
+              <p class="text-sm text-[#5D5D66] leading-relaxed">
+                Agentes integrados a ERPs, CRMs (Salesforce) e bancos que prospectam clientes (SDR), emitem faturas e resolvem tíquetes de suporte técnico de ponta a ponta.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#E6E6EC]">
+              <span class="text-xs font-black uppercase tracking-wider text-[#350EFF]">Habilidade Central:</span>
+              <p class="text-xs font-bold text-[#272727] mt-0.5">Execução transacional em sistemas</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-base font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">O IMPACTO</span>
+            <span class="text-xl text-[#272727]">O valor do agente não está na eloquência da conversa, mas na sua <strong>capacidade de usar ferramentas e entregar trabalho pronto</strong>.</span>
+          </div>
+          <span class="font-bold text-base text-[#5D5D66]">05</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 06: POR QUE UM AGENTE SOZINHO NÃO RESOLVE TUDO? (Layout Misto com Bullets Ricos)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="6" data-title="Limites do Modelo Único">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">LIMITES DO MODELO ÚNICO</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Por que um agente sozinho não resolve tudo?</h2>
+        </div>
+
+        <!-- 2 Columns: Rich Bullet Points List vs Solution Card -->
+        <div class="grid grid-cols-12 gap-10 my-auto items-stretch">
+          
+          <!-- Left Column: 3 Rich Explanatory Bullets -->
+          <div class="col-span-7 flex flex-col justify-between space-y-6">
+            <div class="flex items-start gap-5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#350EFF] mt-2 shrink-0"></span>
+              <div>
+                <h4 class="text-2xl font-extrabold text-[#272727] mb-1">Contexto Lotado (Perda de Foco)</h4>
+                <p class="text-lg text-[#5D5D66] leading-relaxed">Colocar dezenas de ferramentas, regras de negócio e prompts no mesmo modelo confunde o raciocínio e aumenta exponencialmente as chances de alucinação.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#350EFF] mt-2 shrink-0"></span>
+              <div>
+                <h4 class="text-2xl font-extrabold text-[#272727] mb-1">Custo Financeiro e Lentidão</h4>
+                <p class="text-lg text-[#5D5D66] leading-relaxed">Tarefas simples acabam pagando o preço em tempo e dinheiro de reprocessar prompts gigantescos com regras desnecessárias a cada interação.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-5">
+              <span class="w-3.5 h-3.5 rounded-full bg-[#350EFF] mt-2 shrink-0"></span>
+              <div>
+                <h4 class="text-2xl font-extrabold text-[#272727] mb-1">Tudo Trava Junto (Sem Isolamento)</h4>
+                <p class="text-lg text-[#5D5D66] leading-relaxed">Se uma ferramenta secundária travar ou der erro, todo o fluxo é interrompido porque não há separação de responsabilidades.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Solution Card -->
+          <div class="col-span-5 bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-3 block">A MUDANÇA DE PARADIGMA</span>
+              <h3 class="text-3xl font-extrabold text-[#272727] mb-4">Dividir para Conquistar</h3>
+              <p class="text-lg text-[#5D5D66] leading-relaxed mb-6">
+                Em vez de criar um "super-agente" que tenta fazer tudo, a arquitetura moderna decompõe o problema em uma <strong>equipe de agentes especialistas</strong>.
+              </p>
+              <div class="space-y-2 text-base font-semibold text-[#272727]">
+                <div class="flex items-center gap-2.5"><span class="w-2 h-2 rounded-full bg-[#350EFF]"></span> Cada um com seu escopo focado</div>
+                <div class="flex items-center gap-2.5"><span class="w-2 h-2 rounded-full bg-[#350EFF]"></span> Cada um com suas próprias ferramentas</div>
+                <div class="flex items-center gap-2.5"><span class="w-2 h-2 rounded-full bg-[#350EFF]"></span> Memória e falhas isoladas</div>
+              </div>
+            </div>
+            <div class="text-sm font-bold text-[#350EFF] pt-4 border-t border-[#E6E6EC]">
+              Especialização = Precisão e Escalabilidade
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <span class="text-xl text-[#272727]">De um único modelo centralizado sobrecarregado ➔ Para uma rede distribuída de especialistas.</span>
+          <span class="font-bold text-base text-[#5D5D66]">06</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 07: O PROBLEMA DA COMUNICAÇÃO (SEM PADRÃO)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="7" data-title="O Problema da Comunicação">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">O GARGALO</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Sem um padrão, conectar agentes vira um caos</h2>
+        </div>
+
+        <!-- 3 Cards -->
+        <div class="grid grid-cols-3 gap-8 my-auto">
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-3">01 • FORMATOS DIFERENTES</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-3">Cada um fala uma língua</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">Cada equipe cria seu próprio formato de JSON ou API personalizada, sem nenhuma regra comum entre eles.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Sem compatibilidade</div>
+          </div>
+
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-3">02 • MUDOU UM, QUEBROU TUDO</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-3">Dependência Frágil</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">Sem um contrato fixo, qualquer ajuste no texto ou na resposta de um agente quebra todos os outros que dependem dele.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Manutenção difícil</div>
+          </div>
+
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-3">03 • TRABALHO DUPLICADO</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-3">Não Escala</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">Para conectar 10 agentes entre si sem padrão, você precisa escrever e manter até 45 integrações manuais.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Esforço multiplicado</div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-base font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">A SOLUÇÃO</span>
+            <span class="text-xl text-[#272727]">É aqui que entra o <strong>A2A</strong>: um padrão aberto para que qualquer agente converse com outro sem gambiarras.</span>
+          </div>
+          <span class="font-bold text-base text-[#5D5D66]">07</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 08: DIVISOR 2
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#0A0A14] text-white relative overflow-hidden" data-slide="8" data-title="Seção 2">
+        <div class="text-base font-bold tracking-[0.2em] text-[#350EFF] uppercase">PARTE 02</div>
+
+        <div class="my-auto max-w-4xl">
+          <div class="text-[140px] font-black text-[#350EFF] leading-none mb-4">2</div>
+          <h2 class="text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">A2A: Como o Protocolo Funciona</h2>
+          <p class="text-2xl text-[#5D5D66] font-semibold tracking-wide uppercase">
+            O PASSO A PASSO NA PRÁTICA: O CASO DO ASSISTENTE DE VIAGEM
+          </p>
+        </div>
+
+        <div class="flex justify-between items-center text-base text-[#5D5D66]">
+          <span class="font-semibold uppercase tracking-wider">O PROTOCOLO NA PRÁTICA</span>
+          <span class="font-bold text-lg">08</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 09: O PROTOCOLO A2A - CONCEITO TÉCNICO & ARQUITETURA
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="9" data-title="O Protocolo A2A: Arquitetura">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">CONCEITO TÉCNICO • ARQUITETURA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">A2A: O protocolo aberto de comunicação entre IAs</h2>
+          <p class="text-[#5D5D66] text-2xl mt-1.5">Uma camada de aplicação baseada em padrões da Web (HTTP e JSON) para permitir a colaboração entre agentes.</p>
+        </div>
+
+        <!-- 3 Pillars of A2A Architecture -->
+        <div class="grid grid-cols-3 gap-8 my-auto">
+          <!-- Pillar 1 -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-2">01 • DESACOPLAMENTO</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-3">Agnóstico de Tecnologia</h3>
+              <p class="text-[#5D5D66] text-base leading-relaxed mb-4">
+                Não importa se o agente foi programado em Python, TypeScript, LangChain ou CrewAI: todos se comunicam pela mesma interface padrão.
+              </p>
+            </div>
+            <div class="text-xs font-bold text-[#5D5D66] pt-3 border-t border-[#E6E6EC]">Independência Total de Framework</div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-2">02 • CONTRATOS ESTABILIZADOS</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-3">Sem Erros de Integração</h3>
+              <p class="text-[#5D5D66] text-base leading-relaxed mb-4">
+                Esquemas estritos de entrada e saída garantem que um agente saiba exatamente o que o outro precisa receber, eliminando alucinações e falhas.
+              </p>
+            </div>
+            <div class="text-xs font-bold text-[#350EFF] pt-3 border-t border-[#E6E6EC]">Comunicação Previsível</div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-2">03 • SEGURANÇA E AUDITORIA</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-3">Controle e Rastreabilidade</h3>
+              <p class="text-[#5D5D66] text-base leading-relaxed mb-4">
+                Cada ação, mensagem e resultado possui identificadores únicos e registros auditáveis, permitindo controle de acesso e pausas de segurança.
+              </p>
+            </div>
+            <div class="text-xs font-bold text-[#5D5D66] pt-3 border-t border-[#E6E6EC]">Pronto para Ambientes Críticos</div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-base font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">OBJETIVO CENTRAL</span>
+            <span class="text-xl text-[#272727]">Transformar a internet em um ecossistema onde qualquer IA pode descobrir, contratar e colaborar com outras IAs com segurança.</span>
+          </div>
+          <span class="font-bold text-base text-[#5D5D66]">09</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 10: AS 4 PRIMITIVAS TÉCNICAS DO A2A
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="10" data-title="As 4 Primitivas do A2A">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">TERMOS TÉCNICOS • ESPECIFICAÇÃO</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">As 4 primitivas fundamentais do protocolo A2A</h2>
+          <p class="text-[#5D5D66] text-2xl mt-1.5">Toda a colaboração entre agentes no A2A é construída sobre estes 4 conceitos essenciais.</p>
+        </div>
+
+        <!-- 4 Core Primitives Grid Cards -->
+        <div class="grid grid-cols-2 gap-6 my-auto">
+          <!-- Primitive 1: Agent Card -->
+          <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold uppercase text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded">01 • AGENT CARD</span>
+                <span class="text-xs font-mono text-[#5D5D66]">Descoberta</span>
+              </div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-2">Manifesto de Habilidades</h3>
+              <p class="text-sm text-[#5D5D66] leading-relaxed">
+                O "cartão de visitas" público da IA: declara quem ela é, seu cardápio de serviços (Skills), os parâmetros obrigatórios e o formato da resposta.
+              </p>
+            </div>
+            <div class="text-xs font-bold text-[#350EFF] pt-3 border-t border-[#E6E6EC]">Catálogo Transparente de Serviços</div>
+          </div>
+
+          <!-- Primitive 2: Task -->
+          <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold uppercase text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded">02 • TASK (TAREFA)</span>
+                <span class="text-xs font-mono text-[#5D5D66]">Execução</span>
+              </div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-2">Ordem de Serviço com ID</h3>
+              <p class="text-sm text-[#5D5D66] leading-relaxed">
+                Entidade de trabalho persistida com protocolo único (<code class="font-mono text-xs text-[#350EFF]">task_id</code>). Garante que a tarefa nunca se perca e impede cobranças ou execuções duplicadas.
+              </p>
+            </div>
+            <div class="text-xs font-bold text-[#350EFF] pt-3 border-t border-[#E6E6EC]">Persistência & Idempotência</div>
+          </div>
+
+          <!-- Primitive 3: Ciclo de Vida & FSM -->
+          <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold uppercase text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded">03 • CICLO DE VIDA (FSM)</span>
+                <span class="text-xs font-mono text-[#5D5D66]">Status & Segurança</span>
+              </div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-2">Máquina de Estados & Pausa</h3>
+              <p class="text-sm text-[#5D5D66] leading-relaxed">
+                Transições claras de andamento (<code class="font-mono text-xs">submitted</code> ➔ <code class="font-mono text-xs">working</code> ➔ <code class="font-mono text-xs">completed</code>) com suporte ao estado <code class="font-mono text-xs text-[#350EFF] font-bold">input-required</code> para aprovação de humanos.
+              </p>
+            </div>
+            <div class="text-xs font-bold text-[#350EFF] pt-3 border-t border-[#E6E6EC]">Human-in-the-Loop Nativo</div>
+          </div>
+
+          <!-- Primitive 4: Artifacts -->
+          <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold uppercase text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded">04 • ARTIFACTS (ARTEFATOS)</span>
+                <span class="text-xs font-mono text-[#5D5D66]">Entrega</span>
+              </div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-2">Produtos Finais de Valor</h3>
+              <p class="text-sm text-[#5D5D66] leading-relaxed">
+                Os arquivos e saídas concretas geradas pela IA: relatórios em PDF, dados estruturados em JSON, vouchers ou códigos prontos para uso imediato.
+              </p>
+            </div>
+            <div class="text-xs font-bold text-[#350EFF] pt-3 border-t border-[#E6E6EC]">Entregáveis Auditáveis & Estruturados</div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <span class="text-xl text-[#272727]">Essas 4 primitivas garantem que qualquer agente possa descobrir, executar, pausar e entregar tarefas de ponta a ponta.</span>
+          <span class="font-bold text-base text-[#5D5D66]">10</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 11: O CASO PRÁTICO - FLUXOGRAMA DE ORQUESTRAÇÃO (IMAGEM EXPANDIDA)
+           ========================================== -->
+      <section class="slide flex-col justify-between px-20 py-8 bg-[#F5F5F7] text-[#272727] relative overflow-hidden" data-slide="11" data-title="O Cenário: Assistente de Viagem">
+
+        <!-- Header -->
+        <div>
+          <span class="text-base font-bold uppercase tracking-[0.15em] text-[#350EFF]">CASO PRÁTICO • FLUXO DE ORQUESTRAÇÃO</span>
+          <h2 class="text-[2.6rem] font-extrabold text-[#272727] tracking-tight mt-0.5">O Cenário: Como o A2A orquestra a viagem</h2>
+          <p class="text-[#5D5D66] text-lg mt-0.5">Do comando em linguagem natural até a execução concorrente dos especialistas de domínio.</p>
+        </div>
+
+        <!-- Flowchart Image Container (Maximized) -->
+        <div class="my-auto w-full flex items-center justify-center flex-1 py-1">
+          <div class="bg-white p-2.5 rounded-[28px] border border-[#E6E6EC] shadow-md overflow-hidden max-h-[760px] flex items-center justify-center">
+            <img 
+              src="ChatGPT Image Aug 26, 2026, 10_34_04 PM.png" 
+              alt="Fluxograma de Orquestração A2A - Assistente de Viagem" 
+              class="max-h-[740px] w-auto rounded-[20px] object-contain shadow-sm"
+            />
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-3.5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-base font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">A FORÇA DO A2A</span>
+            <span class="text-xl text-[#272727]">O seu agente pessoal conversa com os agentes de 4 empresas diferentes de forma paralela, padronizada e segura.</span>
+          </div>
+          <span class="font-bold text-base text-[#5D5D66]">11</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 12: DIVISOR 3
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#0A0A14] text-white relative overflow-hidden" data-slide="12" data-title="Seção 3">
+        <div class="text-base font-bold tracking-[0.2em] text-[#350EFF] uppercase">PARTE 03</div>
+
+        <div class="my-auto max-w-4xl">
+          <div class="text-[140px] font-black text-[#350EFF] leading-none mb-4">3</div>
+          <h2 class="text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">Arquiteturas, Workflows & Frameworks</h2>
+          <p class="text-2xl text-[#5D5D66] font-semibold tracking-wide uppercase">
+            A2A × MCP, TIPOS DE AGENTES, WORKFLOWS, TOPOLOGIAS E FRAMEWORKS
+          </p>
+        </div>
+
+        <div class="flex justify-between items-center text-base text-[#5D5D66]">
+          <span class="font-semibold uppercase tracking-wider">ORGANIZANDO AGENTES NA PRÁTICA</span>
+          <span class="font-bold text-lg">12</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 13: A2A X MCP (COMPARAÇÃO SIMPLES)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="13" data-title="A2A × MCP">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">COMPARAÇÃO DIRETA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">A2A × MCP: Qual a diferença?</h2>
+        </div>
+
+        <!-- 2 Panels -->
+        <div class="grid grid-cols-2 gap-10 my-auto">
+          <!-- MCP -->
+          <div class="bg-white p-10 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-84">
+            <div>
+              <div class="text-sm font-bold uppercase tracking-[0.15em] text-[#5D5D66] mb-2">MODEL CONTEXT PROTOCOL</div>
+              <h3 class="text-4xl font-black text-[#272727] mb-2">MCP</h3>
+              <div class="text-lg font-bold text-[#5D5D66] mb-4 uppercase">AGENTE ↔ FERRAMENTA / ARQUIVO</div>
+              <ul class="space-y-3 text-lg text-[#5D5D66] leading-relaxed">
+                <li>• <strong>O que conecta:</strong> O agente com bancos de dados, arquivos e APIs locais.</li>
+                <li>• <strong>Papel:</strong> Dá braços e acesso a dados para o modelo consultar.</li>
+                <li>• <strong>Regra de ouro:</strong> Conecta o agente ao que ele <strong>USA</strong>.</li>
+              </ul>
+            </div>
+            <div class="text-base font-bold text-[#5D5D66]">Acesso a Recursos</div>
+          </div>
+
+          <!-- A2A -->
+          <div class="bg-white p-10 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-84">
+            <div>
+              <div class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-2">AGENT TO AGENT PROTOCOL</div>
+              <h3 class="text-4xl font-black text-[#272727] mb-2">A2A</h3>
+              <div class="text-lg font-bold text-[#350EFF] mb-4 uppercase">AGENTE ↔ OUTRO AGENTE</div>
+              <ul class="space-y-3 text-lg text-[#272727] font-medium leading-relaxed">
+                <li>• <strong>O que conecta:</strong> Agentes autônomos que pensam, decidem e colaboram.</li>
+                <li>• <strong>Papel:</strong> Permite delegar metas inteiras para especialistas resolverem.</li>
+                <li>• <strong>Regra de ouro:</strong> Conecta o agente a quem ele <strong>COLABORA</strong>.</li>
+              </ul>
+            </div>
+            <div class="text-base font-bold text-[#350EFF]">Colaboração entre Agentes</div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-base font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">A COMBINAÇÃO PERFEITA</span>
+            <span class="text-xl font-bold text-[#272727]">O Orquestrador usa A2A para falar com especialistas. Cada especialista usa MCP para consultar seus próprios bancos e ferramentas.</span>
+          </div>
+          <span class="font-bold text-base text-[#5D5D66]">13</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 14: TIPOS DE AGENTES DE IA (Layout Editorial em 2 Colunas)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="14" data-title="Tipos de Agentes de IA">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">PAPÉIS NO SISTEMA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Os 4 principais tipos de agentes de IA</h2>
+        </div>
+
+        <!-- 2 Columns with Rich Explanatory Blocks -->
+        <div class="grid grid-cols-2 gap-10 my-auto">
+          
+          <!-- Left Column: Reativo + Raciocínio -->
+          <div class="space-y-6">
+            <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm font-bold uppercase tracking-wider text-[#350EFF]">01 • AGENTE EXECUTOR (REATIVO)</span>
+                <span class="text-xs font-bold text-[#5D5D66] bg-[#F5F5F7] px-2.5 py-1 rounded-full">Determinístico</span>
+              </div>
+              <h4 class="text-2xl font-bold text-[#272727] mb-2">Ação Rápida sob Demanda</h4>
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Acionado diretamente por comandos ou tool calls pontuais. Não planeja a longo prazo: executa tarefas diretas como consultas em banco de dados, envio de e-mails ou conversão de arquivos.
+              </p>
+            </div>
+
+            <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm font-bold uppercase tracking-wider text-[#350EFF]">02 • AGENTE DE RACIOCÍNIO (PLANEJADOR)</span>
+                <span class="text-xs font-bold text-[#5D5D66] bg-[#F5F5F7] px-2.5 py-1 rounded-full">Adaptativo</span>
+              </div>
+              <h4 class="text-2xl font-bold text-[#272727] mb-2">Pensa Antes de Agir (ReAct)</h4>
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Usa ciclos de reflexão e planejamento. Decompõe problemas em etapas, testa hipóteses, analisa erros parciais e ajusta o plano de ação dinamicamente.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Especialista + Orquestrador -->
+          <div class="space-y-6">
+            <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm font-bold uppercase tracking-wider text-[#350EFF]">03 • AGENTE ESPECIALISTA DE DOMÍNIO</span>
+                <span class="text-xs font-bold text-[#5D5D66] bg-[#F5F5F7] px-2.5 py-1 rounded-full">Profundidade</span>
+              </div>
+              <h4 class="text-2xl font-bold text-[#272727] mb-2">Contexto e Regras Específicas</h4>
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Especializado em uma área vertical (ex: finanças, jurídico, medicina, código). Conhece a terminologia, os padrões regulatórios e as ferramentas daquele nicho.
+              </p>
+            </div>
+
+            <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] shadow-sm">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm font-bold uppercase tracking-wider text-[#350EFF]">04 • AGENTE ORQUESTRADOR (SUPERVISOR)</span>
+                <span class="text-xs font-bold text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded-full">Coordenação</span>
+              </div>
+              <h4 class="text-2xl font-bold text-[#272727] mb-2">Visão Geral e Distribuição</h4>
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Recebe o objetivo do usuário, decide quais especialistas acionar, gerencia o andamento das tarefas e consolida o resultado final para entrega.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <span class="text-xl text-[#272727]">Uma equipe madura combina um <strong>Orquestrador</strong> central com múltiplos <strong>Especialistas</strong> e <strong>Executores</strong>.</span>
+          <span class="font-bold text-base text-[#5D5D66]">14</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 15: PADRÕES DE WORKFLOWS AGÊNTICOS (Layout com Tópicos e Bullets Explicativos)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="15" data-title="Workflows de Agentes">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">PADRÕES DE PROJETO</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Padrões de workflows agênticos (Agentic Workflows)</h2>
+        </div>
+
+        <!-- 4 Structured Topic Rows with Bullets -->
+        <div class="my-auto bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm divide-y divide-[#E6E6EC]">
+          
+          <!-- Row 1: Chaining -->
+          <div class="py-4 flex items-start justify-between gap-6">
+            <div class="w-1/3">
+              <span class="text-xs font-bold uppercase tracking-wider text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded-full">01 • CHAINING</span>
+              <h4 class="text-xl font-bold text-[#272727] mt-1.5">Cadeia Sequencial</h4>
+            </div>
+            <div class="w-2/3">
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Tarefas divididas em passos lineares: a saída de um agente vira diretamente a entrada do próximo (ex: <em>Extrair texto ➔ Traduzir ➔ Resumir</em>).
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 2: Routing -->
+          <div class="py-4 flex items-start justify-between gap-6">
+            <div class="w-1/3">
+              <span class="text-xs font-bold uppercase tracking-wider text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded-full">02 • ROUTING</span>
+              <h4 class="text-xl font-bold text-[#272727] mt-1.5">Roteamento Inteligente</h4>
+            </div>
+            <div class="w-2/3">
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Um agente classificador analisa a intenção da mensagem e encaminha para o agente especialista certo (ex: <em>Suporte financeiro vs Suporte técnico</em>).
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 3: Parallel & Voting -->
+          <div class="py-4 flex items-start justify-between gap-6">
+            <div class="w-1/3">
+              <span class="text-xs font-bold uppercase tracking-wider text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded-full">03 • PARALLEL</span>
+              <h4 class="text-xl font-bold text-[#272727] mt-1.5">Paralelização & Votação</h4>
+            </div>
+            <div class="w-2/3">
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Vários agentes executam sub-tarefas simultâneas para ganhar velocidade, ou geram respostas independentes para escolha da melhor por consenso.
+              </p>
+            </div>
+          </div>
+
+          <!-- Row 4: Evaluator-Optimizer -->
+          <div class="py-4 flex items-start justify-between gap-6">
+            <div class="w-1/3">
+              <span class="text-xs font-bold uppercase tracking-wider text-[#350EFF] bg-[#EEEDF8] px-2.5 py-1 rounded-full">04 • REFLECTION</span>
+              <h4 class="text-xl font-bold text-[#272727] mt-1.5">Avaliador-Otimizador</h4>
+            </div>
+            <div class="w-2/3">
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Um agente produz o resultado inicial e outro agente atua como revisor/crítico, apontando melhorias até que o padrão de qualidade seja atingido.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Takeaway Card Ativo -->
+        <div class="bg-[#350EFF] text-white rounded-2xl px-8 py-5 flex items-center justify-between shadow-sm">
+          <span class="text-lg font-bold">O A2A permite que esses padrões de workflows funcionem mesmo quando os agentes pertencem a sistemas ou empresas diferentes.</span>
+          <span class="font-bold text-base text-[#EEEDF8]">15</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 16: TRÊS FORMAS DE ORGANIZAR SEUS AGENTES (TOPOLOGIAS)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="16" data-title="Modelos de Equipe">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-bold uppercase tracking-[0.15em] text-[#350EFF]">ESTRUTURA DE EQUIPES</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Três formas de organizar redes de agentes</h2>
+        </div>
+
+        <!-- 3 Topologies Cards -->
+        <div class="grid grid-cols-3 gap-8 my-auto">
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-2">01 • LÍDER E ESPECIALISTAS</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-2">Orquestrador Central</h3>
+              <p class="text-[#5D5D66] text-base leading-relaxed">Um agente coordenador recebe o pedido do usuário, divide as tarefas entre os especialistas e junta a resposta final.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Mais fácil de controlar</div>
+          </div>
+
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-2">02 • ESTEIRA DE PRODUÇÃO</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-2">Passo a Passo (Linha)</h3>
+              <p class="text-[#5D5D66] text-base leading-relaxed">O agente 1 termina sua parte e passa o resultado para o agente 2, que revisa e entrega para o agente 3.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Ideal para aprovações e esteiras</div>
+          </div>
+
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-80">
+            <div>
+              <div class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] mb-2">03 • REDE COLABORATIVA</div>
+              <h3 class="text-2xl font-bold text-[#272727] mb-2">Conversa Livre</h3>
+              <p class="text-[#5D5D66] text-base leading-relaxed">Os agentes conversam diretamente entre si e decidem juntos quem é o melhor especialista para cada etapa.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Máxima flexibilidade</div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <span class="text-xl text-[#272727]">O protocolo A2A funciona com qualquer um desses formatos, sem precisar mudar o código dos agentes.</span>
+          <span class="font-bold text-base text-[#5D5D66]">16</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 17: O ECOSSISTEMA DE FRAMEWORKS (ONDE AGENTES OPERAM HOJE)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="17" data-title="Ecossistema de Frameworks">
+        <!-- Header -->
+        <div>
+          <span class="text-lg font-black uppercase tracking-[0.2em] text-[#350EFF]">ECOSSISTEMA & FERRAMENTAS</span>
+          <h2 class="text-5xl font-black text-[#272727] tracking-tight mt-1.5">Onde agentes operam hoje: Frameworks do mercado</h2>
+          <p class="text-[#5D5D66] text-xl font-medium mt-1">Como as principais tecnologias de código aberto e plataformas de nuvem organizam agentes na prática.</p>
+        </div>
+
+        <!-- 4 Grid Cards -->
+        <div class="grid grid-cols-4 gap-6 my-auto">
+          
+          <!-- Card 1: LangGraph -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[370px]">
+            <div>
+              <h3 class="text-3xl font-black text-[#272727] tracking-tight">LangGraph</h3>
+              <div class="text-xs font-bold uppercase tracking-wider text-[#350EFF] mt-1.5 mb-3">Grafos de Estado & Ciclos</div>
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Modela a colaboração como grafos orientados a estado. Permite fluxos cíclicos, recuperação de erros e pausas para aprovação humana (checkpoints).
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#E6E6EC]">
+              <span class="text-xs font-black uppercase tracking-wider text-[#350EFF]">Ideal para:</span>
+              <p class="text-xs font-bold text-[#272727] mt-0.5">Workflows determinísticos e controle fino de estado</p>
+            </div>
+          </div>
+
+          <!-- Card 2: CrewAI -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[370px]">
+            <div>
+              <h3 class="text-3xl font-black text-[#272727] tracking-tight">CrewAI</h3>
+              <div class="text-xs font-bold uppercase tracking-wider text-[#350EFF] mt-1.5 mb-3">Equipes Baseadas em Papéis</div>
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Inspirado em dinâmicas de equipes ágeis (Role-Playing). Cada agente tem persona, meta e ferramentas próprias, colaborando e delegando tarefas autonomamente.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#E6E6EC]">
+              <span class="text-xs font-black uppercase tracking-wider text-[#350EFF]">Ideal para:</span>
+              <p class="text-xs font-bold text-[#272727] mt-0.5">Equipes colaborativas com papéis bem definidos</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Microsoft AutoGen -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[370px]">
+            <div>
+              <h3 class="text-3xl font-black text-[#272727] tracking-tight">Microsoft AutoGen</h3>
+              <div class="text-xs font-bold uppercase tracking-wider text-[#350EFF] mt-1.5 mb-3">Conversação Multi-Agente</div>
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Conversação orientada a eventos entre múltiplos agentes. Altamente otimizado para tarefas complexas, geração, depuração e execução iterativa de código.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#E6E6EC]">
+              <span class="text-xs font-black uppercase tracking-wider text-[#350EFF]">Ideal para:</span>
+              <p class="text-xs font-bold text-[#272727] mt-0.5">Engenharia de software e análise cooperativa</p>
+            </div>
+          </div>
+
+          <!-- Card 4: Google Vertex AI -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-[370px]">
+            <div>
+              <h3 class="text-3xl font-black text-[#272727] tracking-tight">Google Vertex AI</h3>
+              <div class="text-xs font-bold uppercase tracking-wider text-[#350EFF] mt-1.5 mb-3">Nuvem Empresarial & A2A</div>
+              <p class="text-base text-[#5D5D66] leading-relaxed">
+                Plataforma empresarial para criação, governança e orquestração em escala. Conecta agentes corporativos com segurança nativa e suporte a protocolos como A2A e MCP.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#E6E6EC]">
+              <span class="text-xs font-black uppercase tracking-wider text-[#350EFF]">Ideal para:</span>
+              <p class="text-xs font-bold text-[#272727] mt-0.5">Interoperabilidade corporativa e escala em nuvem</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-base font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">VISÃO DE MERCADO</span>
+            <span class="text-xl text-[#272727]">Os frameworks cuidam da <strong>lógica interna</strong> de cada agente; o protocolo A2A cuida da <strong>conversa entre agentes</strong> de empresas e tecnologias diferentes.</span>
+          </div>
+          <span class="font-bold text-base text-[#5D5D66]">17</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 18: OBRIGADO! (Impact Final Slide)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#350EFF] text-white relative overflow-hidden" data-slide="18" data-title="Obrigado!">
+        <!-- Abstract geometric line vectors -->
+        <svg class="absolute right-0 top-0 w-[950px] h-full pointer-events-none opacity-20" viewBox="0 0 950 1080" fill="none">
+          <polygon points="120,0 950,0 950,600 350,1080 0,720" stroke="#EEEDF8" stroke-width="2" />
+          <line x1="280" y1="0" x2="850" y2="1080" stroke="#EEEDF8" stroke-width="1.5" stroke-dasharray="8 8" />
+          <polygon points="400,150 900,100 820,850 250,550" stroke="#FFFFFF" stroke-width="1.5" />
+          <circle cx="680" cy="420" r="280" stroke="#EEEDF8" stroke-width="1.5" />
+        </svg>
+
+        <!-- Top metadata -->
+        <div class="relative z-10">
+          <div class="text-3xl font-bold tracking-tight text-white mb-2">Inteli Academy</div>
+          <div class="text-base font-bold tracking-[0.2em] text-[#EEEDF8] uppercase">A2A • PROTOCOLO AGENT-TO-AGENT</div>
+        </div>
+
+        <!-- Center Main Title -->
+        <div class="relative z-10 my-auto max-w-5xl">
+          <h1 class="text-[130px] font-black tracking-tight text-white leading-none mb-6">
+            Obrigado!
+          </h1>
+          <p class="text-3xl text-[#EEEDF8] font-normal leading-relaxed max-w-3xl">
+            Dúvidas, discussões ou ideias sobre como conectar seus agentes na prática?
+          </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="relative z-10 flex items-center justify-between pt-8 border-t border-white/20 text-[#EEEDF8] text-base">
+          <div class="font-semibold tracking-wide">Inteli Academy • Fundamentos de IA Aplicada</div>
+          <span class="text-white font-bold text-lg">18</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================
+       FLOATING CONTROLS & PRESENTATION UI
+       ========================================== -->
+  <nav id="controls-bar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-4 py-2 rounded-full bg-[#0A0A14]/90 text-white backdrop-blur-md border border-[#272727] shadow-2xl transition-opacity duration-300 hover:opacity-100 opacity-90">
+    <button id="btn-prev" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Slide Anterior (← ou Backspace)">
+      <i data-lucide="chevron-left" class="w-5 h-5"></i>
+    </button>
+    
+    <button id="btn-overview" class="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors text-xs font-semibold text-white/90 hover:text-white" title="Visão Geral (O)">
+      <i data-lucide="grid" class="w-4 h-4"></i>
+      <span id="slide-indicator">1 / 18</span>
+    </button>
+
+    <button id="btn-next" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Próximo Slide (→ ou Espaço)">
+      <i data-lucide="chevron-right" class="w-5 h-5"></i>
+    </button>
+
+    <div class="h-4 w-px bg-white/20 mx-1"></div>
+
+    <button id="btn-fullscreen" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Tela Cheia (F)">
+      <i data-lucide="maximize" class="w-4 h-4"></i>
+    </button>
+
+    <button id="btn-print" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Exportar / Imprimir PDF (Ctrl+P)">
+      <i data-lucide="printer" class="w-4 h-4"></i>
+    </button>
+
+    <button id="btn-help" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Atalhos do Teclado (?)">
+      <i data-lucide="keyboard" class="w-4 h-4"></i>
+    </button>
+  </nav>
+
+  <!-- ==========================================
+       SLIDE OVERVIEW MODAL (GRID VIEW)
+       ========================================== -->
+  <div id="overview-modal" class="fixed inset-0 z-50 bg-[#0A0A14]/95 backdrop-blur-md hidden flex-col p-12 overflow-y-auto">
+    <div class="flex items-center justify-between mb-8 max-w-7xl mx-auto w-full">
+      <div>
+        <h2 class="text-3xl font-bold text-white">Visão Geral dos Slides</h2>
+        <p class="text-sm text-[#5D5D66] mt-1">Selecione qualquer slide para navegar</p>
+      </div>
+      <button id="btn-close-overview" class="p-2 rounded-xl bg-white/10 text-white hover:bg-white/20">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <div id="overview-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto w-full pb-12">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+
+  <!-- ==========================================
+       KEYBOARD SHORTCUTS HELP MODAL
+       ========================================== -->
+  <div id="help-modal" class="fixed inset-0 z-50 bg-[#0A0A14]/80 backdrop-blur-sm hidden items-center justify-center p-6">
+    <div class="bg-[#0A0A14] border border-[#272727] rounded-[24px] p-8 max-w-md w-full shadow-2xl">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i data-lucide="keyboard" class="w-5 h-5 text-[#350EFF]"></i>
+          Atalhos do Teclado
+        </h3>
+        <button id="btn-close-help" class="text-[#5D5D66] hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="space-y-3 text-sm">
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Próximo Slide</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">→ / Espaço / Enter</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Slide Anterior</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">← / Backspace</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Primeiro / Último</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">Home / End</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Visão Geral (Grid)</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">O / G</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Tela Cheia</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">F</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Exportar para PDF</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">Ctrl + P</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PRESENTATION ENGINE SCRIPT
+       ========================================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Presentation State
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const totalSlides = slides.length;
+    let currentSlide = 1;
+
+    const viewport = document.getElementById('presentation-viewport');
+    const stage = document.getElementById('slide-stage');
+    const indicator = document.getElementById('slide-indicator');
+    const overviewModal = document.getElementById('overview-modal');
+    const helpModal = document.getElementById('help-modal');
+    const overviewGrid = document.getElementById('overview-grid');
+
+    // 16:9 Scale-to-Fit Engine
+    function resizeStage() {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const targetW = 1920;
+      const targetH = 1080;
+
+      const scale = Math.min(vw / targetW, vh / targetH);
+      stage.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener('resize', resizeStage);
+    resizeStage();
+
+    // Show slide by index (1-based)
+    function goToSlide(index) {
+      if (index < 1) index = 1;
+      if (index > totalSlides) index = totalSlides;
+
+      slides.forEach((slide, idx) => {
+        if (idx + 1 === index) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      currentSlide = index;
+      indicator.textContent = `${currentSlide} / ${totalSlides}`;
+      window.location.hash = `#${currentSlide}`;
+      lucide.createIcons();
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        goToSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        goToSlide(currentSlide - 1);
+      }
+    }
+
+    // Toggle Fullscreen
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => console.log(err));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    // Build Overview Grid
+    function populateOverview() {
+      overviewGrid.innerHTML = '';
+      slides.forEach((slide, idx) => {
+        const num = idx + 1;
+        const title = slide.getAttribute('data-title') || `Slide ${num}`;
+        const isDark = slide.classList.contains('bg-[#0A0A14]') || slide.classList.contains('bg-[#350EFF]');
+        const card = document.createElement('div');
+        card.className = `p-4 rounded-[16px] cursor-pointer transition-all duration-200 border text-left flex flex-col justify-between h-36 ${
+          num === currentSlide 
+            ? 'bg-[#350EFF] text-white border-white shadow-lg ring-2 ring-[#350EFF]' 
+            : 'bg-[#181824] text-[#E6E6EC] border-[#272727] hover:border-[#350EFF] hover:bg-[#202030]'
+        }`;
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold">${String(num).padStart(2, '0')}</span>
+            <span class="text-[10px] uppercase font-semibold px-1.5 py-0.5 rounded bg-white/10">${isDark ? 'DECK' : 'CONTENT'}</span>
+          </div>
+          <div class="font-bold text-sm line-clamp-2">${title}</div>
+          <div class="text-[10px] text-white/50">Ir para slide</div>
+        `;
+        card.addEventListener('click', () => {
+          goToSlide(num);
+          closeOverview();
+        });
+        overviewGrid.appendChild(card);
+      });
+      lucide.createIcons();
+    }
+
+    function openOverview() {
+      populateOverview();
+      overviewModal.classList.remove('hidden');
+      overviewModal.classList.add('flex');
+    }
+
+    function closeOverview() {
+      overviewModal.classList.add('hidden');
+      overviewModal.classList.remove('flex');
+    }
+
+    function toggleOverview() {
+      if (overviewModal.classList.contains('hidden')) {
+        openOverview();
+      } else {
+        closeOverview();
+      }
+    }
+
+    function toggleHelp() {
+      if (helpModal.classList.contains('hidden')) {
+        helpModal.classList.remove('hidden');
+        helpModal.classList.add('flex');
+      } else {
+        helpModal.classList.add('hidden');
+        helpModal.classList.remove('flex');
+      }
+    }
+
+    // Event Listeners
+    document.getElementById('btn-prev').addEventListener('click', prevSlide);
+    document.getElementById('btn-next').addEventListener('click', nextSlide);
+    document.getElementById('btn-fullscreen').addEventListener('click', toggleFullscreen);
+    document.getElementById('btn-overview').addEventListener('click', toggleOverview);
+    document.getElementById('btn-close-overview').addEventListener('click', closeOverview);
+    document.getElementById('btn-print').addEventListener('click', () => window.print());
+    document.getElementById('btn-help').addEventListener('click', toggleHelp);
+    document.getElementById('btn-close-help').addEventListener('click', () => {
+      helpModal.classList.add('hidden');
+      helpModal.classList.remove('flex');
+    });
+
+    // Keyboard Shortcuts
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeOverview();
+        helpModal.classList.add('hidden');
+        helpModal.classList.remove('flex');
+        return;
+      }
+
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter' || e.key === 'PageDown') {
+        e.preventDefault();
+        nextSlide();
+      } else if (e.key === 'ArrowLeft' || e.key === 'Backspace' || e.key === 'PageUp') {
+        e.preventDefault();
+        prevSlide();
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        goToSlide(1);
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        goToSlide(totalSlides);
+      } else if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+      } else if (e.key === 'o' || e.key === 'O' || e.key === 'g' || e.key === 'G') {
+        toggleOverview();
+      } else if (e.key === '?') {
+        toggleHelp();
+      }
+    });
+
+    // Initial Hash Check
+    if (window.location.hash) {
+      const hashNum = parseInt(window.location.hash.replace('#', ''));
+      if (!isNaN(hashNum) && hashNum >= 1 && hashNum <= totalSlides) {
+        goToSlide(hashNum);
+      }
+    }
+  </script>
+</body>
+</html>

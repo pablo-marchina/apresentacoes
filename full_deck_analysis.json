@@ -1,0 +1,6315 @@
+[
+  {
+    "index": 1,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 31.0,
+        "width": 144.0,
+        "height": 15.8,
+        "text": "Inteli Academy",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Inteli Academy",
+            "runs": [
+              {
+                "text": "Inteli Academy",
+                "bold": true,
+                "size": 10.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 123.8,
+        "width": 302.4,
+        "height": 21.6,
+        "text": "FUNDAMENTOS DE IA APLICADA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "FUNDAMENTOS DE IA APLICADA",
+            "runs": [
+              {
+                "text": "FUNDAMENTOS DE IA APLICADA",
+                "bold": null,
+                "size": 14.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 174.2,
+        "width": 468.0,
+        "height": 72.0,
+        "text": "A2A",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A",
+            "runs": [
+              {
+                "text": "A2A",
+                "bold": true,
+                "size": 64.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 246.2,
+        "width": 612.0,
+        "height": 44.6,
+        "text": "Agentes que colaboram",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Agentes que colaboram",
+            "runs": [
+              {
+                "text": "Agentes que colaboram",
+                "bold": true,
+                "size": 30.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 361.4,
+        "width": 525.6,
+        "height": 54.0,
+        "text": "Como agentes descobrem capacidades, delegam tarefas e trocam resultados.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Como agentes descobrem capacidades, delegam tarefas e trocam resultados.",
+            "runs": [
+              {
+                "text": "Como agentes descobrem capacidades, delegam tarefas e trocam resultados.",
+                "bold": null,
+                "size": 18.0,
+                "color": "E6E3FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 446.4,
+        "top": 0.0,
+        "width": 151.2,
+        "height": 540.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "A7A1FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 6",
+        "type": "AUTO_SHAPE",
+        "left": 583.2,
+        "top": 0.0,
+        "width": 194.4,
+        "height": 540.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "A7A1FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 7",
+        "type": "AUTO_SHAPE",
+        "left": 684.0,
+        "top": 136.8,
+        "width": 129.6,
+        "height": 201.6,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "A7A1FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 8",
+        "type": "TEXT_BOX",
+        "left": 843.8,
+        "top": 493.9,
+        "width": 43.2,
+        "height": 15.8,
+        "text": "01",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "01",
+            "runs": [
+              {
+                "text": "01",
+                "bold": null,
+                "size": 8.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 57.6,
+        "top": 68.4,
+        "width": 849.6,
+        "height": 43.2,
+        "text": "Do problema à colaboração entre agentes",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Do problema à colaboração entre agentes",
+            "runs": [
+              {
+                "text": "Do problema à colaboração entre agentes",
+                "bold": true,
+                "size": 29.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 133.2,
+        "width": 32.4,
+        "height": 18.7,
+        "text": "01",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "01",
+            "runs": [
+              {
+                "text": "01",
+                "bold": null,
+                "size": 12.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 131.8,
+        "width": 453.6,
+        "height": 21.6,
+        "text": "O que é um agente?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O que é um agente?",
+            "runs": [
+              {
+                "text": "O que é um agente?",
+                "bold": true,
+                "size": 18.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 694.8,
+        "top": 133.2,
+        "width": 165.6,
+        "height": 17.3,
+        "text": "AGENTE VS. CHATBOT",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE VS. CHATBOT",
+            "runs": [
+              {
+                "text": "AGENTE VS. CHATBOT",
+                "bold": null,
+                "size": 8.6,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 4",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 166.3,
+        "width": 846.0,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 5",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 185.0,
+        "width": 32.4,
+        "height": 18.7,
+        "text": "02",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "02",
+            "runs": [
+              {
+                "text": "02",
+                "bold": null,
+                "size": 12.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 183.6,
+        "width": 453.6,
+        "height": 21.6,
+        "text": "Quando um agente precisa de outro?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Quando um agente precisa de outro?",
+            "runs": [
+              {
+                "text": "Quando um agente precisa de outro?",
+                "bold": true,
+                "size": 18.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 694.8,
+        "top": 185.0,
+        "width": 165.6,
+        "height": 17.3,
+        "text": "SISTEMAS MULTI-AGENTE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "SISTEMAS MULTI-AGENTE",
+            "runs": [
+              {
+                "text": "SISTEMAS MULTI-AGENTE",
+                "bold": null,
+                "size": 8.6,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 218.2,
+        "width": 846.0,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 236.9,
+        "width": 32.4,
+        "height": 18.7,
+        "text": "03",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "03",
+            "runs": [
+              {
+                "text": "03",
+                "bold": null,
+                "size": 12.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 235.4,
+        "width": 453.6,
+        "height": 21.6,
+        "text": "A2A",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A",
+            "runs": [
+              {
+                "text": "A2A",
+                "bold": true,
+                "size": 18.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 11",
+        "type": "TEXT_BOX",
+        "left": 694.8,
+        "top": 236.9,
+        "width": 165.6,
+        "height": 17.3,
+        "text": "INTEROPERABILIDADE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "INTEROPERABILIDADE",
+            "runs": [
+              {
+                "text": "INTEROPERABILIDADE",
+                "bold": null,
+                "size": 8.6,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 12",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 270.0,
+        "width": 846.0,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 13",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 288.7,
+        "width": 32.4,
+        "height": 18.7,
+        "text": "04",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "04",
+            "runs": [
+              {
+                "text": "04",
+                "bold": null,
+                "size": 12.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 14",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 287.3,
+        "width": 453.6,
+        "height": 21.6,
+        "text": "Como a conversa acontece?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Como a conversa acontece?",
+            "runs": [
+              {
+                "text": "Como a conversa acontece?",
+                "bold": true,
+                "size": 18.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 694.8,
+        "top": 288.7,
+        "width": 165.6,
+        "height": 17.3,
+        "text": "TASKS • MESSAGES • ARTIFACTS",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "TASKS • MESSAGES • ARTIFACTS",
+            "runs": [
+              {
+                "text": "TASKS • MESSAGES • ARTIFACTS",
+                "bold": null,
+                "size": 8.6,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 16",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 321.8,
+        "width": 846.0,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 17",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 340.6,
+        "width": 32.4,
+        "height": 18.7,
+        "text": "05",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "05",
+            "runs": [
+              {
+                "text": "05",
+                "bold": null,
+                "size": 12.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 18",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 339.1,
+        "width": 453.6,
+        "height": 21.6,
+        "text": "A2A × MCP",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A × MCP",
+            "runs": [
+              {
+                "text": "A2A × MCP",
+                "bold": true,
+                "size": 18.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 19",
+        "type": "TEXT_BOX",
+        "left": 694.8,
+        "top": 340.6,
+        "width": 165.6,
+        "height": 17.3,
+        "text": "AGENTE ↔ AGENTE / AGENTE ↔ FERRAMENTA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE ↔ AGENTE / AGENTE ↔ FERRAMENTA",
+            "runs": [
+              {
+                "text": "AGENTE ↔ AGENTE / AGENTE ↔ FERRAMENTA",
+                "bold": null,
+                "size": 8.6,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 20",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 373.7,
+        "width": 846.0,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "2",
+        "paragraphs": [
+          {
+            "text": "2",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 61.2,
+        "top": 111.6,
+        "width": 90.0,
+        "height": 108.0,
+        "text": "1",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "1",
+            "runs": [
+              {
+                "text": "1",
+                "bold": true,
+                "size": 100.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 61.2,
+        "top": 296.6,
+        "width": 835.2,
+        "height": 50.4,
+        "text": "O que é um agente?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O que é um agente?",
+            "runs": [
+              {
+                "text": "O que é um agente?",
+                "bold": true,
+                "size": 42.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 360.0,
+        "width": 792.0,
+        "height": 21.6,
+        "text": "ANTES DO A2A, PRECISAMOS DEFINIR O QUE ESTÁ SE COMUNICANDO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "ANTES DO A2A, PRECISAMOS DEFINIR O QUE ESTÁ SE COMUNICANDO",
+            "runs": [
+              {
+                "text": "ANTES DO A2A, PRECISAMOS DEFINIR O QUE ESTÁ SE COMUNICANDO",
+                "bold": null,
+                "size": 13.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "3",
+        "paragraphs": [
+          {
+            "text": "3",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 172.8,
+        "height": 15.8,
+        "text": "PONTO DE PARTIDA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "PONTO DE PARTIDA",
+            "runs": [
+              {
+                "text": "PONTO DE PARTIDA",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 89.3,
+        "width": 828.0,
+        "height": 53.3,
+        "text": "Um agente recebe um objetivo e age sobre o ambiente",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Um agente recebe um objetivo e age sobre o ambiente",
+            "runs": [
+              {
+                "text": "Um agente recebe um objetivo e age sobre o ambiente",
+                "bold": true,
+                "size": 27.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 171.4,
+        "width": 255.6,
+        "height": 144.0,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 185.8,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "ENTRADA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "ENTRADA",
+            "runs": [
+              {
+                "text": "ENTRADA",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 213.1,
+        "width": 222.5,
+        "height": 87.8,
+        "text": "Objetivo\n+ contexto",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Objetivo",
+            "runs": [
+              {
+                "text": "Objetivo",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "+ contexto",
+            "runs": [
+              {
+                "text": "+ contexto",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 352.1,
+        "top": 171.4,
+        "width": 255.6,
+        "height": 144.0,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 368.6,
+        "top": 185.8,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "DECISÃO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "DECISÃO",
+            "runs": [
+              {
+                "text": "DECISÃO",
+                "bold": null,
+                "size": 8.7,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 368.6,
+        "top": 213.1,
+        "width": 222.5,
+        "height": 87.8,
+        "text": "Planeja\n+ escolhe ações",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Planeja",
+            "runs": [
+              {
+                "text": "Planeja",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "+ escolhe ações",
+            "runs": [
+              {
+                "text": "+ escolhe ações",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 645.1,
+        "top": 171.4,
+        "width": 255.6,
+        "height": 144.0,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 661.7,
+        "top": 185.8,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "AÇÃO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AÇÃO",
+            "runs": [
+              {
+                "text": "AÇÃO",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 661.7,
+        "top": 213.1,
+        "width": 222.5,
+        "height": 87.8,
+        "text": "Ferramentas\n+ sistemas",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Ferramentas",
+            "runs": [
+              {
+                "text": "Ferramentas",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "+ sistemas",
+            "runs": [
+              {
+                "text": "+ sistemas",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 11",
+        "type": "AUTO_SHAPE",
+        "left": 318.2,
+        "top": 243.4,
+        "width": 28.8,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 12",
+        "type": "AUTO_SHAPE",
+        "left": 611.3,
+        "top": 243.4,
+        "width": 28.8,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 13",
+        "type": "TEXT_BOX",
+        "left": 60.5,
+        "top": 362.2,
+        "width": 165.6,
+        "height": 18.0,
+        "text": "OBSERVA O RESULTADO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "OBSERVA O RESULTADO",
+            "runs": [
+              {
+                "text": "OBSERVA O RESULTADO",
+                "bold": null,
+                "size": 9.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 14",
+        "type": "TEXT_BOX",
+        "left": 219.6,
+        "top": 356.4,
+        "width": 396.0,
+        "height": 30.2,
+        "text": "→ ajusta → tenta novamente → conclui",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "→ ajusta → tenta novamente → conclui",
+            "runs": [
+              {
+                "text": "→ ajusta → tenta novamente → conclui",
+                "bold": true,
+                "size": 18.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 15",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 411.8,
+        "width": 842.4,
+        "height": 43.2,
+        "text": "",
+        "fill": "ECEBFA",
+        "line": "ECEBFA",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 16",
+        "type": "TEXT_BOX",
+        "left": 79.2,
+        "top": 423.4,
+        "width": 799.2,
+        "height": 20.2,
+        "text": "Agente ≠ apenas texto gerado. O diferencial é a capacidade de decidir e executar ações orientadas a um objetivo.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Agente ≠ apenas texto gerado. O diferencial é a capacidade de decidir e executar ações orientadas a um objetivo.",
+            "runs": [
+              {
+                "text": "Agente ≠ apenas texto gerado. O diferencial é a capacidade de decidir e executar ações orientadas a um objetivo.",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "4",
+        "paragraphs": [
+          {
+            "text": "4",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 172.8,
+        "height": 15.8,
+        "text": "A DISTINÇÃO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A DISTINÇÃO",
+            "runs": [
+              {
+                "text": "A DISTINÇÃO",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 813.6,
+        "height": 51.8,
+        "text": "Chatbot responde. Agente persegue um objetivo.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Chatbot responde. Agente persegue um objetivo.",
+            "runs": [
+              {
+                "text": "Chatbot responde. Agente persegue um objetivo.",
+                "bold": true,
+                "size": 28.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 169.2,
+        "width": 406.8,
+        "height": 226.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 183.6,
+        "width": 373.7,
+        "height": 14.4,
+        "text": "CHATBOT",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "CHATBOT",
+            "runs": [
+              {
+                "text": "CHATBOT",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 211.0,
+        "width": 373.7,
+        "height": 170.6,
+        "text": "• Reage à mensagem\n• Gera uma resposta\n• Fluxo curto\n• Baixa autonomia",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "• Reage à mensagem",
+            "runs": [
+              {
+                "text": "• Reage à mensagem",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• Gera uma resposta",
+            "runs": [
+              {
+                "text": "• Gera uma resposta",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• Fluxo curto",
+            "runs": [
+              {
+                "text": "• Fluxo curto",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• Baixa autonomia",
+            "runs": [
+              {
+                "text": "• Baixa autonomia",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 493.9,
+        "top": 169.2,
+        "width": 406.8,
+        "height": 226.8,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 510.5,
+        "top": 183.6,
+        "width": 373.7,
+        "height": 14.4,
+        "text": "AGENTE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE",
+            "runs": [
+              {
+                "text": "AGENTE",
+                "bold": null,
+                "size": 8.7,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 510.5,
+        "top": 211.0,
+        "width": 373.7,
+        "height": 170.6,
+        "text": "• Interpreta um objetivo\n• Planeja etapas\n• Usa ferramentas\n• Observa resultados\n• Pode delegar",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "• Interpreta um objetivo",
+            "runs": [
+              {
+                "text": "• Interpreta um objetivo",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• Planeja etapas",
+            "runs": [
+              {
+                "text": "• Planeja etapas",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• Usa ferramentas",
+            "runs": [
+              {
+                "text": "• Usa ferramentas",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• Observa resultados",
+            "runs": [
+              {
+                "text": "• Observa resultados",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• Pode delegar",
+            "runs": [
+              {
+                "text": "• Pode delegar",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 421.2,
+        "width": 842.4,
+        "height": 44.6,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 432.7,
+        "width": 799.2,
+        "height": 18.7,
+        "text": "Pergunta-chave: “Quem decide o próximo passo?”",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Pergunta-chave: “Quem decide o próximo passo?”",
+            "runs": [
+              {
+                "text": "Pergunta-chave: “Quem decide o próximo passo?”",
+                "bold": true,
+                "size": 16.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "5",
+        "paragraphs": [
+          {
+            "text": "5",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 61.2,
+        "top": 111.6,
+        "width": 90.0,
+        "height": 108.0,
+        "text": "2",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "2",
+            "runs": [
+              {
+                "text": "2",
+                "bold": true,
+                "size": 100.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 61.2,
+        "top": 296.6,
+        "width": 835.2,
+        "height": 50.4,
+        "text": "Quando um agente precisa de outro?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Quando um agente precisa de outro?",
+            "runs": [
+              {
+                "text": "Quando um agente precisa de outro?",
+                "bold": true,
+                "size": 42.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 360.0,
+        "width": 792.0,
+        "height": 21.6,
+        "text": "O PROBLEMA APARECE QUANDO UMA TAREFA COMBINA ESPECIALISTAS DIFERENTES",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O PROBLEMA APARECE QUANDO UMA TAREFA COMBINA ESPECIALISTAS DIFERENTES",
+            "runs": [
+              {
+                "text": "O PROBLEMA APARECE QUANDO UMA TAREFA COMBINA ESPECIALISTAS DIFERENTES",
+                "bold": null,
+                "size": 13.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "6",
+        "paragraphs": [
+          {
+            "text": "6",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 216.0,
+        "height": 15.8,
+        "text": "SISTEMA MULTI-AGENTE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "SISTEMA MULTI-AGENTE",
+            "runs": [
+              {
+                "text": "SISTEMA MULTI-AGENTE",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 89.3,
+        "width": 828.0,
+        "height": 46.8,
+        "text": "Dividir para especializar",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Dividir para especializar",
+            "runs": [
+              {
+                "text": "Dividir para especializar",
+                "bold": true,
+                "size": 29.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 146.9,
+        "width": 626.4,
+        "height": 25.2,
+        "text": "Um agente pode coordenar um trabalho maior sem executar todas as capacidades sozinho.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Um agente pode coordenar um trabalho maior sem executar todas as capacidades sozinho.",
+            "runs": [
+              {
+                "text": "Um agente pode coordenar um trabalho maior sem executar todas as capacidades sozinho.",
+                "bold": null,
+                "size": 17.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 3",
+        "type": "AUTO_SHAPE",
+        "left": 357.1,
+        "top": 203.8,
+        "width": 248.4,
+        "height": 76.3,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 374.4,
+        "top": 227.5,
+        "width": 212.4,
+        "height": 18.7,
+        "text": "AGENTE ORQUESTRADOR",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE ORQUESTRADOR",
+            "runs": [
+              {
+                "text": "AGENTE ORQUESTRADOR",
+                "bold": true,
+                "size": 16.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 61.9,
+        "top": 360.0,
+        "width": 223.2,
+        "height": 68.4,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 74.9,
+        "top": 374.4,
+        "width": 187.2,
+        "height": 15.8,
+        "text": "Pesquisa",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Pesquisa",
+            "runs": [
+              {
+                "text": "Pesquisa",
+                "bold": true,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 74.9,
+        "top": 394.6,
+        "width": 187.2,
+        "height": 14.4,
+        "text": "busca e síntese",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "busca e síntese",
+            "runs": [
+              {
+                "text": "busca e síntese",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 480.2,
+        "top": 279.4,
+        "width": -306.7,
+        "height": 75.6,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 9",
+        "type": "AUTO_SHAPE",
+        "left": 326.2,
+        "top": 360.0,
+        "width": 223.2,
+        "height": 68.4,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 339.1,
+        "top": 374.4,
+        "width": 187.2,
+        "height": 15.8,
+        "text": "Finanças",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Finanças",
+            "runs": [
+              {
+                "text": "Finanças",
+                "bold": true,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 11",
+        "type": "TEXT_BOX",
+        "left": 339.1,
+        "top": 394.6,
+        "width": 187.2,
+        "height": 14.4,
+        "text": "cálculo e regras",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "cálculo e regras",
+            "runs": [
+              {
+                "text": "cálculo e regras",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 12",
+        "type": "AUTO_SHAPE",
+        "left": 480.2,
+        "top": 279.4,
+        "width": -42.5,
+        "height": 75.6,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 13",
+        "type": "AUTO_SHAPE",
+        "left": 590.4,
+        "top": 360.0,
+        "width": 223.2,
+        "height": 68.4,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 14",
+        "type": "TEXT_BOX",
+        "left": 603.4,
+        "top": 374.4,
+        "width": 187.2,
+        "height": 15.8,
+        "text": "Especialista",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Especialista",
+            "runs": [
+              {
+                "text": "Especialista",
+                "bold": true,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 603.4,
+        "top": 394.6,
+        "width": 187.2,
+        "height": 14.4,
+        "text": "domínio específico",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "domínio específico",
+            "runs": [
+              {
+                "text": "domínio específico",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 16",
+        "type": "AUTO_SHAPE",
+        "left": 480.2,
+        "top": 279.4,
+        "width": 221.8,
+        "height": 75.6,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 17",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 445.0,
+        "width": 842.4,
+        "height": 36.0,
+        "text": "",
+        "fill": "ECEBFA",
+        "line": "ECEBFA",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 18",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 454.3,
+        "width": 799.2,
+        "height": 15.8,
+        "text": "Agora surge a pergunta: como esses agentes se encontram e se entendem?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Agora surge a pergunta: como esses agentes se encontram e se entendem?",
+            "runs": [
+              {
+                "text": "Agora surge a pergunta: como esses agentes se encontram e se entendem?",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "7",
+        "paragraphs": [
+          {
+            "text": "7",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 172.8,
+        "height": 15.8,
+        "text": "O GARGALO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O GARGALO",
+            "runs": [
+              {
+                "text": "O GARGALO",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 835.2,
+        "height": 50.4,
+        "text": "Sem um padrão, a colaboração vira integração artesanal",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Sem um padrão, a colaboração vira integração artesanal",
+            "runs": [
+              {
+                "text": "Sem um padrão, a colaboração vira integração artesanal",
+                "bold": true,
+                "size": 27.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 174.2,
+        "width": 198.0,
+        "height": 118.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 188.6,
+        "width": 164.9,
+        "height": 14.4,
+        "text": "AGENTE A",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE A",
+            "runs": [
+              {
+                "text": "AGENTE A",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 216.0,
+        "width": 164.9,
+        "height": 62.6,
+        "text": "JSON próprio",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "JSON próprio",
+            "runs": [
+              {
+                "text": "JSON próprio",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 277.2,
+        "top": 174.2,
+        "width": 198.0,
+        "height": 118.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 293.8,
+        "top": 188.6,
+        "width": 164.9,
+        "height": 14.4,
+        "text": "AGENTE B",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE B",
+            "runs": [
+              {
+                "text": "AGENTE B",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 293.8,
+        "top": 216.0,
+        "width": 164.9,
+        "height": 62.6,
+        "text": "API específica",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "API específica",
+            "runs": [
+              {
+                "text": "API específica",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 495.4,
+        "top": 174.2,
+        "width": 198.0,
+        "height": 118.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 511.9,
+        "top": 188.6,
+        "width": 164.9,
+        "height": 14.4,
+        "text": "AGENTE C",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE C",
+            "runs": [
+              {
+                "text": "AGENTE C",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 511.9,
+        "top": 216.0,
+        "width": 164.9,
+        "height": 62.6,
+        "text": "Formato proprietário",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Formato proprietário",
+            "runs": [
+              {
+                "text": "Formato proprietário",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 11",
+        "type": "AUTO_SHAPE",
+        "left": 713.5,
+        "top": 174.2,
+        "width": 198.0,
+        "height": 118.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 12",
+        "type": "TEXT_BOX",
+        "left": 730.1,
+        "top": 188.6,
+        "width": 164.9,
+        "height": 14.4,
+        "text": "AGENTE D",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE D",
+            "runs": [
+              {
+                "text": "AGENTE D",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 13",
+        "type": "TEXT_BOX",
+        "left": 730.1,
+        "top": 216.0,
+        "width": 164.9,
+        "height": 62.6,
+        "text": "Outro framework",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Outro framework",
+            "runs": [
+              {
+                "text": "Outro framework",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 14",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 322.6,
+        "width": 504.0,
+        "height": 25.2,
+        "text": "Cada par de agentes precisa conhecer detalhes do outro.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Cada par de agentes precisa conhecer detalhes do outro.",
+            "runs": [
+              {
+                "text": "Cada par de agentes precisa conhecer detalhes do outro.",
+                "bold": true,
+                "size": 19.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 375.8,
+        "width": 90.0,
+        "height": 21.6,
+        "text": "Resultado:",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Resultado:",
+            "runs": [
+              {
+                "text": "Resultado:",
+                "bold": null,
+                "size": 14.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 16",
+        "type": "TEXT_BOX",
+        "left": 144.0,
+        "top": 373.0,
+        "width": 626.4,
+        "height": 26.6,
+        "text": "acoplamento • duplicação • baixa interoperabilidade",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "acoplamento • duplicação • baixa interoperabilidade",
+            "runs": [
+              {
+                "text": "acoplamento • duplicação • baixa interoperabilidade",
+                "bold": null,
+                "size": 18.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 17",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 433.4,
+        "width": 842.4,
+        "height": 37.4,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 18",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 442.8,
+        "width": 806.4,
+        "height": 17.3,
+        "text": "A2A propõe uma linguagem comum para agentes independentes colaborarem.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A propõe uma linguagem comum para agentes independentes colaborarem.",
+            "runs": [
+              {
+                "text": "A2A propõe uma linguagem comum para agentes independentes colaborarem.",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "8",
+        "paragraphs": [
+          {
+            "text": "8",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 61.2,
+        "top": 111.6,
+        "width": 90.0,
+        "height": 108.0,
+        "text": "3",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "3",
+            "runs": [
+              {
+                "text": "3",
+                "bold": true,
+                "size": 100.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 61.2,
+        "top": 296.6,
+        "width": 835.2,
+        "height": 50.4,
+        "text": "A2A",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A",
+            "runs": [
+              {
+                "text": "A2A",
+                "bold": true,
+                "size": 42.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 360.0,
+        "width": 792.0,
+        "height": 21.6,
+        "text": "UM PADRÃO ABERTO PARA INTEROPERABILIDADE ENTRE AGENTES",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "UM PADRÃO ABERTO PARA INTEROPERABILIDADE ENTRE AGENTES",
+            "runs": [
+              {
+                "text": "UM PADRÃO ABERTO PARA INTEROPERABILIDADE ENTRE AGENTES",
+                "bold": null,
+                "size": 13.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "9",
+        "paragraphs": [
+          {
+            "text": "9",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 144.0,
+        "height": 15.8,
+        "text": "DEFINIÇÃO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "DEFINIÇÃO",
+            "runs": [
+              {
+                "text": "DEFINIÇÃO",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 828.0,
+        "height": 46.1,
+        "text": "A2A = Agent2Agent",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A = Agent2Agent",
+            "runs": [
+              {
+                "text": "A2A = Agent2Agent",
+                "bold": true,
+                "size": 30.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 146.9,
+        "width": 813.6,
+        "height": 56.2,
+        "text": "Um padrão aberto para que agentes independentes descubram capacidades, troquem mensagens e gerenciem tarefas sem expor sua implementação interna.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Um padrão aberto para que agentes independentes descubram capacidades, troquem mensagens e gerenciem tarefas sem expor sua implementação interna.",
+            "runs": [
+              {
+                "text": "Um padrão aberto para que agentes independentes descubram capacidades, troquem mensagens e gerenciem tarefas sem expor sua implementação interna.",
+                "bold": null,
+                "size": 19.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 3",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 236.2,
+        "width": 255.6,
+        "height": 131.0,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 250.6,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "DESCOBRIR",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "DESCOBRIR",
+            "runs": [
+              {
+                "text": "DESCOBRIR",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 5",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 277.9,
+        "width": 222.5,
+        "height": 74.9,
+        "text": "“O que você sabe fazer?”",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "“O que você sabe fazer?”",
+            "runs": [
+              {
+                "text": "“O que você sabe fazer?”",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 6",
+        "type": "AUTO_SHAPE",
+        "left": 352.1,
+        "top": 236.2,
+        "width": 255.6,
+        "height": 131.0,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 368.6,
+        "top": 250.6,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "DELEGAR",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "DELEGAR",
+            "runs": [
+              {
+                "text": "DELEGAR",
+                "bold": null,
+                "size": 8.7,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 8",
+        "type": "TEXT_BOX",
+        "left": 368.6,
+        "top": 277.9,
+        "width": 222.5,
+        "height": 74.9,
+        "text": "“Execute esta tarefa.”",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "“Execute esta tarefa.”",
+            "runs": [
+              {
+                "text": "“Execute esta tarefa.”",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 9",
+        "type": "AUTO_SHAPE",
+        "left": 645.1,
+        "top": 236.2,
+        "width": 255.6,
+        "height": 131.0,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 661.7,
+        "top": 250.6,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "RECEBER",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "RECEBER",
+            "runs": [
+              {
+                "text": "RECEBER",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 11",
+        "type": "TEXT_BOX",
+        "left": 661.7,
+        "top": 277.9,
+        "width": 222.5,
+        "height": 74.9,
+        "text": "“Aqui está o resultado.”",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "“Aqui está o resultado.”",
+            "runs": [
+              {
+                "text": "“Aqui está o resultado.”",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 12",
+        "type": "AUTO_SHAPE",
+        "left": 318.2,
+        "top": 301.0,
+        "width": 30.2,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 13",
+        "type": "AUTO_SHAPE",
+        "left": 611.3,
+        "top": 301.0,
+        "width": 30.2,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 14",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 406.8,
+        "width": 842.4,
+        "height": 49.0,
+        "text": "",
+        "fill": "ECEBFA",
+        "line": "ECEBFA",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 419.0,
+        "width": 795.6,
+        "height": 24.5,
+        "text": "O agente remoto pode continuar sendo uma “caixa-preta”: o cliente não precisa conhecer seus modelos, ferramentas ou memória.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O agente remoto pode continuar sendo uma “caixa-preta”: o cliente não precisa conhecer seus modelos, ferramentas ou memória.",
+            "runs": [
+              {
+                "text": "O agente remoto pode continuar sendo uma “caixa-preta”: o cliente não precisa conhecer seus modelos, ferramentas ou memória.",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 16",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 485.3,
+        "width": 612.0,
+        "height": 12.2,
+        "text": "Fonte: A2A Protocol — especificação v1.0.0 (documentação oficial).",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Fonte: A2A Protocol — especificação v1.0.0 (documentação oficial).",
+            "runs": [
+              {
+                "text": "Fonte: A2A Protocol — especificação v1.0.0 (documentação oficial).",
+                "bold": null,
+                "size": 6.8,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "10",
+        "paragraphs": [
+          {
+            "text": "10",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 201.6,
+        "height": 15.8,
+        "text": "01 • DISCOVERY",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "01 • DISCOVERY",
+            "runs": [
+              {
+                "text": "01 • DISCOVERY",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 828.0,
+        "height": 47.5,
+        "text": "Antes de conversar, descubra o agente",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Antes de conversar, descubra o agente",
+            "runs": [
+              {
+                "text": "Antes de conversar, descubra o agente",
+                "bold": true,
+                "size": 28.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 145.4,
+        "width": 633.6,
+        "height": 24.5,
+        "text": "O Agent Card descreve a identidade e as capacidades oferecidas pelo agente.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O Agent Card descreve a identidade e as capacidades oferecidas pelo agente.",
+            "runs": [
+              {
+                "text": "O Agent Card descreve a identidade e as capacidades oferecidas pelo agente.",
+                "bold": null,
+                "size": 18.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 3",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 191.5,
+        "width": 367.2,
+        "height": 205.2,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 211.0,
+        "width": 122.4,
+        "height": 17.3,
+        "text": "AGENT CARD",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENT CARD",
+            "runs": [
+              {
+                "text": "AGENT CARD",
+                "bold": null,
+                "size": 10.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 5",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 241.9,
+        "width": 313.2,
+        "height": 118.8,
+        "text": "name: \"Travel Agent\"\ndescription: \"Planeja viagens\"\nskills:\n  • buscar_voo\n  • comparar_hotel\n  • montar_roteiro",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "name: \"Travel Agent\"",
+            "runs": [
+              {
+                "text": "name: \"Travel Agent\"",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "description: \"Planeja viagens\"",
+            "runs": [
+              {
+                "text": "description: \"Planeja viagens\"",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "skills:",
+            "runs": [
+              {
+                "text": "skills:",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• buscar_voo",
+            "runs": [
+              {
+                "text": "  • buscar_voo",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• comparar_hotel",
+            "runs": [
+              {
+                "text": "  • comparar_hotel",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "• montar_roteiro",
+            "runs": [
+              {
+                "text": "  • montar_roteiro",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 6",
+        "type": "AUTO_SHAPE",
+        "left": 457.2,
+        "top": 191.5,
+        "width": 444.2,
+        "height": 205.2,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 478.8,
+        "top": 212.4,
+        "width": 108.0,
+        "height": 17.3,
+        "text": "PERGUNTA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "PERGUNTA",
+            "runs": [
+              {
+                "text": "PERGUNTA",
+                "bold": null,
+                "size": 9.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 8",
+        "type": "TEXT_BOX",
+        "left": 478.8,
+        "top": 247.7,
+        "width": 352.8,
+        "height": 31.0,
+        "text": "“Você consegue fazer isso?”",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "“Você consegue fazer isso?”",
+            "runs": [
+              {
+                "text": "“Você consegue fazer isso?”",
+                "bold": true,
+                "size": 23.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 478.8,
+        "top": 309.6,
+        "width": 360.0,
+        "height": 54.0,
+        "text": "→ descobre capacidades\n→ decide se vale delegar",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "→ descobre capacidades",
+            "runs": [
+              {
+                "text": "→ descobre capacidades",
+                "bold": null,
+                "size": 17.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "→ decide se vale delegar",
+            "runs": [
+              {
+                "text": "→ decide se vale delegar",
+                "bold": null,
+                "size": 17.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 485.3,
+        "width": 612.0,
+        "height": 12.2,
+        "text": "Fonte: A2A Protocol v1.0.0 — Agent Card / AgentCard.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Fonte: A2A Protocol v1.0.0 — Agent Card / AgentCard.",
+            "runs": [
+              {
+                "text": "Fonte: A2A Protocol v1.0.0 — Agent Card / AgentCard.",
+                "bold": null,
+                "size": 6.8,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "11",
+        "paragraphs": [
+          {
+            "text": "11",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 223.2,
+        "height": 15.8,
+        "text": "02 • INTERACTION MODEL",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "02 • INTERACTION MODEL",
+            "runs": [
+              {
+                "text": "02 • INTERACTION MODEL",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 828.0,
+        "height": 46.1,
+        "text": "A unidade de trabalho é a Task",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A unidade de trabalho é a Task",
+            "runs": [
+              {
+                "text": "A unidade de trabalho é a Task",
+                "bold": true,
+                "size": 28.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 176.4,
+        "width": 255.6,
+        "height": 103.7,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 74.9,
+        "top": 193.0,
+        "width": 201.6,
+        "height": 15.8,
+        "text": "MESSAGE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "MESSAGE",
+            "runs": [
+              {
+                "text": "MESSAGE",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 74.9,
+        "top": 220.3,
+        "width": 208.8,
+        "height": 18.7,
+        "text": "instrui / atualiza",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "instrui / atualiza",
+            "runs": [
+              {
+                "text": "instrui / atualiza",
+                "bold": null,
+                "size": 16.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 347.0,
+        "top": 176.4,
+        "width": 255.6,
+        "height": 103.7,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 362.9,
+        "top": 193.0,
+        "width": 201.6,
+        "height": 15.8,
+        "text": "TASK",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "TASK",
+            "runs": [
+              {
+                "text": "TASK",
+                "bold": null,
+                "size": 10.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 362.9,
+        "top": 220.3,
+        "width": 208.8,
+        "height": 18.7,
+        "text": "controla o trabalho",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "controla o trabalho",
+            "runs": [
+              {
+                "text": "controla o trabalho",
+                "bold": true,
+                "size": 16.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 635.0,
+        "top": 176.4,
+        "width": 255.6,
+        "height": 103.7,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 650.9,
+        "top": 193.0,
+        "width": 201.6,
+        "height": 15.8,
+        "text": "ARTIFACT",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "ARTIFACT",
+            "runs": [
+              {
+                "text": "ARTIFACT",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 650.9,
+        "top": 220.3,
+        "width": 208.8,
+        "height": 18.7,
+        "text": "entrega o resultado",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "entrega o resultado",
+            "runs": [
+              {
+                "text": "entrega o resultado",
+                "bold": null,
+                "size": 16.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 11",
+        "type": "AUTO_SHAPE",
+        "left": 317.5,
+        "top": 228.2,
+        "width": 25.9,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 12",
+        "type": "AUTO_SHAPE",
+        "left": 604.8,
+        "top": 228.2,
+        "width": 25.9,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 13",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 326.9,
+        "width": 158.4,
+        "height": 21.6,
+        "text": "Exemplo de ciclo",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Exemplo de ciclo",
+            "runs": [
+              {
+                "text": "Exemplo de ciclo",
+                "bold": null,
+                "size": 13.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 14",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 361.4,
+        "width": 288.0,
+        "height": 24.5,
+        "text": "“Busque um hotel em São Paulo”",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "“Busque um hotel em São Paulo”",
+            "runs": [
+              {
+                "text": "“Busque um hotel em São Paulo”",
+                "bold": true,
+                "size": 17.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 15",
+        "type": "AUTO_SHAPE",
+        "left": 347.8,
+        "top": 373.0,
+        "width": 44.6,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 16",
+        "type": "TEXT_BOX",
+        "left": 401.8,
+        "top": 361.4,
+        "width": 144.0,
+        "height": 23.0,
+        "text": "TASK: working",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "TASK: working",
+            "runs": [
+              {
+                "text": "TASK: working",
+                "bold": true,
+                "size": 16.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 17",
+        "type": "AUTO_SHAPE",
+        "left": 554.4,
+        "top": 373.0,
+        "width": 44.6,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 18",
+        "type": "TEXT_BOX",
+        "left": 608.4,
+        "top": 361.4,
+        "width": 259.2,
+        "height": 24.5,
+        "text": "ARTIFACT: opções.json",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "ARTIFACT: opções.json",
+            "runs": [
+              {
+                "text": "ARTIFACT: opções.json",
+                "bold": true,
+                "size": 16.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 19",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 417.6,
+        "width": 842.4,
+        "height": 37.4,
+        "text": "",
+        "fill": "ECEBFA",
+        "line": "ECEBFA",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 20",
+        "type": "TEXT_BOX",
+        "left": 77.0,
+        "top": 427.0,
+        "width": 802.8,
+        "height": 17.3,
+        "text": "Mensagens carregam comunicação; o resultado da tarefa pode ser entregue como Artifact.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Mensagens carregam comunicação; o resultado da tarefa pode ser entregue como Artifact.",
+            "runs": [
+              {
+                "text": "Mensagens carregam comunicação; o resultado da tarefa pode ser entregue como Artifact.",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 21",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 485.3,
+        "width": 612.0,
+        "height": 12.2,
+        "text": "Fonte: A2A Protocol v1.0.0 — Messages, Tasks e Artifacts.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Fonte: A2A Protocol v1.0.0 — Messages, Tasks e Artifacts.",
+            "runs": [
+              {
+                "text": "Fonte: A2A Protocol v1.0.0 — Messages, Tasks e Artifacts.",
+                "bold": null,
+                "size": 6.8,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "12",
+        "paragraphs": [
+          {
+            "text": "12",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 187.2,
+        "height": 15.8,
+        "text": "03 • LIFECYCLE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "03 • LIFECYCLE",
+            "runs": [
+              {
+                "text": "03 • LIFECYCLE",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 828.0,
+        "height": 46.8,
+        "text": "Uma Task tem estado — não é só uma requisição",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Uma Task tem estado — não é só uma requisição",
+            "runs": [
+              {
+                "text": "Uma Task tem estado — não é só uma requisição",
+                "bold": true,
+                "size": 27.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 183.6,
+        "width": 183.6,
+        "height": 90.0,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 72.0,
+        "top": 203.0,
+        "width": 158.4,
+        "height": 17.3,
+        "text": "submitted",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "submitted",
+            "runs": [
+              {
+                "text": "submitted",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 72.0,
+        "top": 230.4,
+        "width": 158.4,
+        "height": 15.8,
+        "text": "recebida",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "recebida",
+            "runs": [
+              {
+                "text": "recebida",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 246.2,
+        "top": 228.2,
+        "width": 25.2,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 6",
+        "type": "AUTO_SHAPE",
+        "left": 275.0,
+        "top": 183.6,
+        "width": 183.6,
+        "height": 90.0,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 288.0,
+        "top": 203.0,
+        "width": 158.4,
+        "height": 17.3,
+        "text": "working",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "working",
+            "runs": [
+              {
+                "text": "working",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 8",
+        "type": "TEXT_BOX",
+        "left": 288.0,
+        "top": 230.4,
+        "width": 158.4,
+        "height": 15.8,
+        "text": "processando",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "processando",
+            "runs": [
+              {
+                "text": "processando",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 9",
+        "type": "AUTO_SHAPE",
+        "left": 462.2,
+        "top": 228.2,
+        "width": 25.2,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 10",
+        "type": "AUTO_SHAPE",
+        "left": 491.0,
+        "top": 183.6,
+        "width": 183.6,
+        "height": 90.0,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 11",
+        "type": "TEXT_BOX",
+        "left": 504.0,
+        "top": 203.0,
+        "width": 158.4,
+        "height": 17.3,
+        "text": "input-required",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "input-required",
+            "runs": [
+              {
+                "text": "input-required",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 12",
+        "type": "TEXT_BOX",
+        "left": 504.0,
+        "top": 230.4,
+        "width": 158.4,
+        "height": 15.8,
+        "text": "precisa de informação",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "precisa de informação",
+            "runs": [
+              {
+                "text": "precisa de informação",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 13",
+        "type": "AUTO_SHAPE",
+        "left": 678.2,
+        "top": 228.2,
+        "width": 25.2,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 14",
+        "type": "AUTO_SHAPE",
+        "left": 707.0,
+        "top": 183.6,
+        "width": 183.6,
+        "height": 90.0,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 720.0,
+        "top": 203.0,
+        "width": 158.4,
+        "height": 17.3,
+        "text": "completed",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "completed",
+            "runs": [
+              {
+                "text": "completed",
+                "bold": true,
+                "size": 14.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 16",
+        "type": "TEXT_BOX",
+        "left": 720.0,
+        "top": 230.4,
+        "width": 158.4,
+        "height": 15.8,
+        "text": "resultado pronto",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "resultado pronto",
+            "runs": [
+              {
+                "text": "resultado pronto",
+                "bold": null,
+                "size": 10.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 17",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 315.4,
+        "width": 662.4,
+        "height": 27.4,
+        "text": "Isso permite tarefas longas, assíncronas e com atualizações de progresso.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Isso permite tarefas longas, assíncronas e com atualizações de progresso.",
+            "runs": [
+              {
+                "text": "Isso permite tarefas longas, assíncronas e com atualizações de progresso.",
+                "bold": true,
+                "size": 18.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 18",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 364.3,
+        "width": 255.6,
+        "height": 82.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 19",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 378.7,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "STREAMING",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "STREAMING",
+            "runs": [
+              {
+                "text": "STREAMING",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 20",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 406.1,
+        "width": 222.5,
+        "height": 26.6,
+        "text": "atualizações em tempo real",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "atualizações em tempo real",
+            "runs": [
+              {
+                "text": "atualizações em tempo real",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 21",
+        "type": "AUTO_SHAPE",
+        "left": 352.1,
+        "top": 364.3,
+        "width": 255.6,
+        "height": 82.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 22",
+        "type": "TEXT_BOX",
+        "left": 368.6,
+        "top": 378.7,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "PUSH",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "PUSH",
+            "runs": [
+              {
+                "text": "PUSH",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 23",
+        "type": "TEXT_BOX",
+        "left": 368.6,
+        "top": 406.1,
+        "width": 222.5,
+        "height": 26.6,
+        "text": "notificação para tarefas longas",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "notificação para tarefas longas",
+            "runs": [
+              {
+                "text": "notificação para tarefas longas",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 24",
+        "type": "AUTO_SHAPE",
+        "left": 645.1,
+        "top": 364.3,
+        "width": 255.6,
+        "height": 82.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 25",
+        "type": "TEXT_BOX",
+        "left": 661.7,
+        "top": 378.7,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "RETRY / RESUME",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "RETRY / RESUME",
+            "runs": [
+              {
+                "text": "RETRY / RESUME",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 26",
+        "type": "TEXT_BOX",
+        "left": 661.7,
+        "top": 406.1,
+        "width": 222.5,
+        "height": 26.6,
+        "text": "acompanhar o mesmo trabalho",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "acompanhar o mesmo trabalho",
+            "runs": [
+              {
+                "text": "acompanhar o mesmo trabalho",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 27",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 485.3,
+        "width": 612.0,
+        "height": 12.2,
+        "text": "Fonte: A2A Protocol v1.0.0 — Task lifecycle e streaming.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Fonte: A2A Protocol v1.0.0 — Task lifecycle e streaming.",
+            "runs": [
+              {
+                "text": "Fonte: A2A Protocol v1.0.0 — Task lifecycle e streaming.",
+                "bold": null,
+                "size": 6.8,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "13",
+        "paragraphs": [
+          {
+            "text": "13",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 61.2,
+        "top": 111.6,
+        "width": 90.0,
+        "height": 108.0,
+        "text": "4",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "4",
+            "runs": [
+              {
+                "text": "4",
+                "bold": true,
+                "size": 100.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 61.2,
+        "top": 296.6,
+        "width": 835.2,
+        "height": 50.4,
+        "text": "Como os agentes conversam?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Como os agentes conversam?",
+            "runs": [
+              {
+                "text": "Como os agentes conversam?",
+                "bold": true,
+                "size": 42.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 61.9,
+        "top": 360.0,
+        "width": 792.0,
+        "height": 21.6,
+        "text": "A2A ORGANIZA DESCOBERTA, INTERAÇÃO, ESTADO E ENTREGA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A ORGANIZA DESCOBERTA, INTERAÇÃO, ESTADO E ENTREGA",
+            "runs": [
+              {
+                "text": "A2A ORGANIZA DESCOBERTA, INTERAÇÃO, ESTADO E ENTREGA",
+                "bold": null,
+                "size": 13.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "14",
+        "paragraphs": [
+          {
+            "text": "14",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 144.0,
+        "height": 15.8,
+        "text": "ARQUITETURA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "ARQUITETURA",
+            "runs": [
+              {
+                "text": "ARQUITETURA",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 828.0,
+        "height": 46.8,
+        "text": "O agente remoto continua independente",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O agente remoto continua independente",
+            "runs": [
+              {
+                "text": "O agente remoto continua independente",
+                "bold": true,
+                "size": 29.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 181.4,
+        "width": 226.8,
+        "height": 185.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 203.8,
+        "width": 194.4,
+        "height": 17.3,
+        "text": "AGENTE CLIENTE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE CLIENTE",
+            "runs": [
+              {
+                "text": "AGENTE CLIENTE",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 238.3,
+        "width": 172.8,
+        "height": 86.4,
+        "text": "LLM\n+ ferramentas\n+ estado local",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "LLM",
+            "runs": [
+              {
+                "text": "LLM",
+                "bold": true,
+                "size": 19.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "+ ferramentas",
+            "runs": [
+              {
+                "text": "+ ferramentas",
+                "bold": true,
+                "size": 19.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "+ estado local",
+            "runs": [
+              {
+                "text": "+ estado local",
+                "bold": true,
+                "size": 19.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 318.2,
+        "top": 233.3,
+        "width": 320.4,
+        "height": 83.5,
+        "text": "",
+        "fill": "ECEBFA",
+        "line": "ECEBFA",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 327.6,
+        "top": 254.2,
+        "width": 72.0,
+        "height": 23.0,
+        "text": "A2A",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A",
+            "runs": [
+              {
+                "text": "A2A",
+                "bold": true,
+                "size": 20.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 392.4,
+        "top": 254.9,
+        "width": 223.2,
+        "height": 20.2,
+        "text": "HTTP(S) • mensagens • tasks",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "HTTP(S) • mensagens • tasks",
+            "runs": [
+              {
+                "text": "HTTP(S) • mensagens • tasks",
+                "bold": null,
+                "size": 12.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 669.6,
+        "top": 181.4,
+        "width": 231.8,
+        "height": 185.8,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 689.0,
+        "top": 203.8,
+        "width": 194.4,
+        "height": 17.3,
+        "text": "AGENTE REMOTO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE REMOTO",
+            "runs": [
+              {
+                "text": "AGENTE REMOTO",
+                "bold": null,
+                "size": 10.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 689.0,
+        "top": 238.3,
+        "width": 172.8,
+        "height": 86.4,
+        "text": "“caixa-preta”\nLLM + tools\n+ dados próprios",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "“caixa-preta”",
+            "runs": [
+              {
+                "text": "“caixa-preta”",
+                "bold": true,
+                "size": 19.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "LLM + tools",
+            "runs": [
+              {
+                "text": "LLM + tools",
+                "bold": true,
+                "size": 19.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "+ dados próprios",
+            "runs": [
+              {
+                "text": "+ dados próprios",
+                "bold": true,
+                "size": 19.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 11",
+        "type": "AUTO_SHAPE",
+        "left": 289.4,
+        "top": 275.0,
+        "width": 28.8,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 12",
+        "type": "AUTO_SHAPE",
+        "left": 640.8,
+        "top": 275.0,
+        "width": 28.8,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 13",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 411.8,
+        "width": 842.4,
+        "height": 41.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 14",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 423.4,
+        "width": 802.8,
+        "height": 19.4,
+        "text": "O cliente conhece o contrato de interação — não a implementação interna do agente remoto.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O cliente conhece o contrato de interação — não a implementação interna do agente remoto.",
+            "runs": [
+              {
+                "text": "O cliente conhece o contrato de interação — não a implementação interna do agente remoto.",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 485.3,
+        "width": 612.0,
+        "height": 12.2,
+        "text": "Fonte: A2A Protocol v1.0.0 — interoperabilidade entre agentes independentes.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Fonte: A2A Protocol v1.0.0 — interoperabilidade entre agentes independentes.",
+            "runs": [
+              {
+                "text": "Fonte: A2A Protocol v1.0.0 — interoperabilidade entre agentes independentes.",
+                "bold": null,
+                "size": 6.8,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "15",
+        "paragraphs": [
+          {
+            "text": "15",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 338.4,
+        "height": 15.8,
+        "text": "A COMPARAÇÃO QUE MAIS GERA DÚVIDA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A COMPARAÇÃO QUE MAIS GERA DÚVIDA",
+            "runs": [
+              {
+                "text": "A COMPARAÇÃO QUE MAIS GERA DÚVIDA",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 828.0,
+        "height": 46.8,
+        "text": "A2A × MCP",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A × MCP",
+            "runs": [
+              {
+                "text": "A2A × MCP",
+                "bold": true,
+                "size": 31.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 174.2,
+        "width": 406.8,
+        "height": 195.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 188.6,
+        "width": 373.7,
+        "height": 14.4,
+        "text": "MCP",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "MCP",
+            "runs": [
+              {
+                "text": "MCP",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 216.0,
+        "width": 373.7,
+        "height": 139.7,
+        "text": "AGENTE ↔ FERRAMENTA / CONTEXTO\n\nEx.: banco, API, arquivo, sistema interno\n\nFoco: fornecer capacidades e contexto ao agente",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE ↔ FERRAMENTA / CONTEXTO",
+            "runs": [
+              {
+                "text": "AGENTE ↔ FERRAMENTA / CONTEXTO",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "Ex.: banco, API, arquivo, sistema interno",
+            "runs": [
+              {
+                "text": "Ex.: banco, API, arquivo, sistema interno",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "Foco: fornecer capacidades e contexto ao agente",
+            "runs": [
+              {
+                "text": "Foco: fornecer capacidades e contexto ao agente",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 493.9,
+        "top": 174.2,
+        "width": 406.8,
+        "height": 195.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 510.5,
+        "top": 188.6,
+        "width": 373.7,
+        "height": 14.4,
+        "text": "A2A",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A",
+            "runs": [
+              {
+                "text": "A2A",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 510.5,
+        "top": 216.0,
+        "width": 373.7,
+        "height": 139.7,
+        "text": "AGENTE ↔ AGENTE\n\nEx.: agente financeiro, agente de viagens\n\nFoco: descoberta, delegação e colaboração",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE ↔ AGENTE",
+            "runs": [
+              {
+                "text": "AGENTE ↔ AGENTE",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "Ex.: agente financeiro, agente de viagens",
+            "runs": [
+              {
+                "text": "Ex.: agente financeiro, agente de viagens",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "Foco: descoberta, delegação e colaboração",
+            "runs": [
+              {
+                "text": "Foco: descoberta, delegação e colaboração",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 404.6,
+        "width": 842.4,
+        "height": 41.8,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 416.2,
+        "width": 802.8,
+        "height": 19.4,
+        "text": "Pense assim: MCP conecta o agente ao que ele usa. A2A conecta o agente a quem ele colabora.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Pense assim: MCP conecta o agente ao que ele usa. A2A conecta o agente a quem ele colabora.",
+            "runs": [
+              {
+                "text": "Pense assim: MCP conecta o agente ao que ele usa. A2A conecta o agente a quem ele colabora.",
+                "bold": true,
+                "size": 14.5,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "16",
+        "paragraphs": [
+          {
+            "text": "16",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 165.6,
+        "height": 15.8,
+        "text": "CASO PRÁTICO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "CASO PRÁTICO",
+            "runs": [
+              {
+                "text": "CASO PRÁTICO",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 828.0,
+        "height": 47.5,
+        "text": "“Planeje uma viagem para São Paulo”",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "“Planeje uma viagem para São Paulo”",
+            "runs": [
+              {
+                "text": "“Planeje uma viagem para São Paulo”",
+                "bold": true,
+                "size": 27.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 145.4,
+        "width": 612.0,
+        "height": 23.0,
+        "text": "Um único pedido pode virar várias tarefas especializadas.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Um único pedido pode virar várias tarefas especializadas.",
+            "runs": [
+              {
+                "text": "Um único pedido pode virar várias tarefas especializadas.",
+                "bold": null,
+                "size": 17.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 3",
+        "type": "AUTO_SHAPE",
+        "left": 347.0,
+        "top": 183.6,
+        "width": 266.4,
+        "height": 64.8,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 367.2,
+        "top": 204.5,
+        "width": 226.8,
+        "height": 17.3,
+        "text": "ORQUESTRADOR",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "ORQUESTRADOR",
+            "runs": [
+              {
+                "text": "ORQUESTRADOR",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 318.2,
+        "width": 252.0,
+        "height": 79.2,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 73.4,
+        "top": 340.6,
+        "width": 223.2,
+        "height": 18.0,
+        "text": "VOO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "VOO",
+            "runs": [
+              {
+                "text": "VOO",
+                "bold": true,
+                "size": 16.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 73.4,
+        "top": 363.6,
+        "width": 223.2,
+        "height": 14.4,
+        "text": "buscar opções",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "buscar opções",
+            "runs": [
+              {
+                "text": "buscar opções",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 480.2,
+        "top": 248.4,
+        "width": -295.2,
+        "height": 68.4,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 9",
+        "type": "AUTO_SHAPE",
+        "left": 350.6,
+        "top": 318.2,
+        "width": 252.0,
+        "height": 79.2,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 365.0,
+        "top": 340.6,
+        "width": 223.2,
+        "height": 18.0,
+        "text": "HOTEL",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "HOTEL",
+            "runs": [
+              {
+                "text": "HOTEL",
+                "bold": true,
+                "size": 16.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 11",
+        "type": "TEXT_BOX",
+        "left": 365.0,
+        "top": 363.6,
+        "width": 223.2,
+        "height": 14.4,
+        "text": "comparar preços",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "comparar preços",
+            "runs": [
+              {
+                "text": "comparar preços",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 12",
+        "type": "AUTO_SHAPE",
+        "left": 480.2,
+        "top": 248.4,
+        "width": -3.6,
+        "height": 68.4,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 13",
+        "type": "AUTO_SHAPE",
+        "left": 642.2,
+        "top": 318.2,
+        "width": 252.0,
+        "height": 79.2,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 14",
+        "type": "TEXT_BOX",
+        "left": 656.6,
+        "top": 340.6,
+        "width": 223.2,
+        "height": 18.0,
+        "text": "TRANSPORTE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "TRANSPORTE",
+            "runs": [
+              {
+                "text": "TRANSPORTE",
+                "bold": true,
+                "size": 16.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 656.6,
+        "top": 363.6,
+        "width": 223.2,
+        "height": 14.4,
+        "text": "estimar deslocamento",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "estimar deslocamento",
+            "runs": [
+              {
+                "text": "estimar deslocamento",
+                "bold": null,
+                "size": 10.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 16",
+        "type": "AUTO_SHAPE",
+        "left": 480.2,
+        "top": 248.4,
+        "width": 288.0,
+        "height": 68.4,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 17",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 429.1,
+        "width": 842.4,
+        "height": 38.9,
+        "text": "",
+        "fill": "ECEBFA",
+        "line": "ECEBFA",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 18",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 438.5,
+        "width": 802.8,
+        "height": 18.0,
+        "text": "O orquestrador não precisa saber como cada especialista calcula seu resultado.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O orquestrador não precisa saber como cada especialista calcula seu resultado.",
+            "runs": [
+              {
+                "text": "O orquestrador não precisa saber como cada especialista calcula seu resultado.",
+                "bold": true,
+                "size": 14.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "17",
+        "paragraphs": [
+          {
+            "text": "17",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 165.6,
+        "height": 15.8,
+        "text": "NÃO É MÁGICA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "NÃO É MÁGICA",
+            "runs": [
+              {
+                "text": "NÃO É MÁGICA",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 842.4,
+        "height": 49.0,
+        "text": "A2A resolve interoperabilidade — não resolve todos os problemas",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A2A resolve interoperabilidade — não resolve todos os problemas",
+            "runs": [
+              {
+                "text": "A2A resolve interoperabilidade — não resolve todos os problemas",
+                "bold": true,
+                "size": 26.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 2",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 178.6,
+        "width": 255.6,
+        "height": 87.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 193.0,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "SEGURANÇA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "SEGURANÇA",
+            "runs": [
+              {
+                "text": "SEGURANÇA",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 220.3,
+        "width": 222.5,
+        "height": 31.7,
+        "text": "quem pode delegar o quê?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "quem pode delegar o quê?",
+            "runs": [
+              {
+                "text": "quem pode delegar o quê?",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 347.0,
+        "top": 178.6,
+        "width": 255.6,
+        "height": 87.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 363.6,
+        "top": 193.0,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "CONFIANÇA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "CONFIANÇA",
+            "runs": [
+              {
+                "text": "CONFIANÇA",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 363.6,
+        "top": 220.3,
+        "width": 222.5,
+        "height": 31.7,
+        "text": "como validar o resultado?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "como validar o resultado?",
+            "runs": [
+              {
+                "text": "como validar o resultado?",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 635.0,
+        "top": 178.6,
+        "width": 255.6,
+        "height": 87.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 651.6,
+        "top": 193.0,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "CUSTO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "CUSTO",
+            "runs": [
+              {
+                "text": "CUSTO",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 651.6,
+        "top": 220.3,
+        "width": 222.5,
+        "height": 31.7,
+        "text": "mais agentes = mais chamadas",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "mais agentes = mais chamadas",
+            "runs": [
+              {
+                "text": "mais agentes = mais chamadas",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 11",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 290.2,
+        "width": 255.6,
+        "height": 87.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 12",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 304.6,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "LATÊNCIA",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "LATÊNCIA",
+            "runs": [
+              {
+                "text": "LATÊNCIA",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 13",
+        "type": "TEXT_BOX",
+        "left": 75.6,
+        "top": 331.9,
+        "width": 222.5,
+        "height": 31.7,
+        "text": "mais etapas podem atrasar",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "mais etapas podem atrasar",
+            "runs": [
+              {
+                "text": "mais etapas podem atrasar",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 14",
+        "type": "AUTO_SHAPE",
+        "left": 347.0,
+        "top": 290.2,
+        "width": 255.6,
+        "height": 87.8,
+        "text": "",
+        "fill": "FFFFFF",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 363.6,
+        "top": 304.6,
+        "width": 222.5,
+        "height": 14.4,
+        "text": "OBSERVABILIDADE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "OBSERVABILIDADE",
+            "runs": [
+              {
+                "text": "OBSERVABILIDADE",
+                "bold": null,
+                "size": 8.7,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 16",
+        "type": "TEXT_BOX",
+        "left": 363.6,
+        "top": 331.9,
+        "width": 222.5,
+        "height": 31.7,
+        "text": "como rastrear a cadeia?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "como rastrear a cadeia?",
+            "runs": [
+              {
+                "text": "como rastrear a cadeia?",
+                "bold": null,
+                "size": 15.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 17",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 419.0,
+        "width": 842.4,
+        "height": 41.8,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 18",
+        "type": "TEXT_BOX",
+        "left": 77.8,
+        "top": 430.6,
+        "width": 802.8,
+        "height": 19.4,
+        "text": "A pergunta de arquitetura deixa de ser “qual agente?” e passa a ser “qual colaboração vale a pena?”",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A pergunta de arquitetura deixa de ser “qual agente?” e passa a ser “qual colaboração vale a pena?”",
+            "runs": [
+              {
+                "text": "A pergunta de arquitetura deixa de ser “qual agente?” e passa a ser “qual colaboração vale a pena?”",
+                "bold": true,
+                "size": 14.3,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "18",
+        "paragraphs": [
+          {
+            "text": "18",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 63.4,
+        "width": 144.0,
+        "height": 15.8,
+        "text": "ATIVIDADE",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "ATIVIDADE",
+            "runs": [
+              {
+                "text": "ATIVIDADE",
+                "bold": null,
+                "size": 9.2,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 87.8,
+        "width": 828.0,
+        "height": 47.5,
+        "text": "Desenhe seu primeiro sistema multi-agente",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Desenhe seu primeiro sistema multi-agente",
+            "runs": [
+              {
+                "text": "Desenhe seu primeiro sistema multi-agente",
+                "bold": true,
+                "size": 29.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 146.2,
+        "width": 691.2,
+        "height": 24.5,
+        "text": "Cenário: um sistema de atendimento para uma empresa de tecnologia.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Cenário: um sistema de atendimento para uma empresa de tecnologia.",
+            "runs": [
+              {
+                "text": "Cenário: um sistema de atendimento para uma empresa de tecnologia.",
+                "bold": null,
+                "size": 17.0,
+                "color": "6E6C79",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 3",
+        "type": "TEXT_BOX",
+        "left": 60.5,
+        "top": 195.8,
+        "width": 36.0,
+        "height": 18.0,
+        "text": "01",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "01",
+            "runs": [
+              {
+                "text": "01",
+                "bold": null,
+                "size": 11.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 194.4,
+        "width": 568.8,
+        "height": 20.2,
+        "text": "Quais agentes existem?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Quais agentes existem?",
+            "runs": [
+              {
+                "text": "Quais agentes existem?",
+                "bold": true,
+                "size": 17.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 5",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 226.1,
+        "width": 626.4,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 6",
+        "type": "TEXT_BOX",
+        "left": 60.5,
+        "top": 244.8,
+        "width": 36.0,
+        "height": 18.0,
+        "text": "02",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "02",
+            "runs": [
+              {
+                "text": "02",
+                "bold": null,
+                "size": 11.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 7",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 243.4,
+        "width": 568.8,
+        "height": 20.2,
+        "text": "Qual agente orquestra?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Qual agente orquestra?",
+            "runs": [
+              {
+                "text": "Qual agente orquestra?",
+                "bold": true,
+                "size": 17.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 8",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 275.0,
+        "width": 626.4,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 9",
+        "type": "TEXT_BOX",
+        "left": 60.5,
+        "top": 293.8,
+        "width": 36.0,
+        "height": 18.0,
+        "text": "03",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "03",
+            "runs": [
+              {
+                "text": "03",
+                "bold": null,
+                "size": 11.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 10",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 292.3,
+        "width": 568.8,
+        "height": 20.2,
+        "text": "Quando cada agente recebe uma Task?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Quando cada agente recebe uma Task?",
+            "runs": [
+              {
+                "text": "Quando cada agente recebe uma Task?",
+                "bold": true,
+                "size": 17.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 11",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 324.0,
+        "width": 626.4,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 12",
+        "type": "TEXT_BOX",
+        "left": 60.5,
+        "top": 342.7,
+        "width": 36.0,
+        "height": 18.0,
+        "text": "04",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "04",
+            "runs": [
+              {
+                "text": "04",
+                "bold": null,
+                "size": 11.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 13",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 341.3,
+        "width": 568.8,
+        "height": 20.2,
+        "text": "O que é Message? O que é Artifact?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "O que é Message? O que é Artifact?",
+            "runs": [
+              {
+                "text": "O que é Message? O que é Artifact?",
+                "bold": true,
+                "size": 17.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 14",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 373.0,
+        "width": 626.4,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 15",
+        "type": "TEXT_BOX",
+        "left": 60.5,
+        "top": 391.7,
+        "width": 36.0,
+        "height": 18.0,
+        "text": "05",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "05",
+            "runs": [
+              {
+                "text": "05",
+                "bold": null,
+                "size": 11.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 16",
+        "type": "TEXT_BOX",
+        "left": 106.6,
+        "top": 390.2,
+        "width": 568.8,
+        "height": 20.2,
+        "text": "Que informação aparece no Agent Card?",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Que informação aparece no Agent Card?",
+            "runs": [
+              {
+                "text": "Que informação aparece no Agent Card?",
+                "bold": true,
+                "size": 17.0,
+                "color": "24242A",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 17",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 421.9,
+        "width": 626.4,
+        "height": 0.0,
+        "text": "",
+        "fill_type": "BACKGROUND (5)",
+        "line": "D9D9DF",
+        "paragraphs": []
+      },
+      {
+        "name": "Shape 18",
+        "type": "AUTO_SHAPE",
+        "left": 705.6,
+        "top": 195.8,
+        "width": 195.8,
+        "height": 234.0,
+        "text": "",
+        "fill": "0A0A14",
+        "line": "0A0A14",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 19",
+        "type": "TEXT_BOX",
+        "left": 728.6,
+        "top": 221.8,
+        "width": 154.8,
+        "height": 18.7,
+        "text": "DESAFIO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "DESAFIO",
+            "runs": [
+              {
+                "text": "DESAFIO",
+                "bold": null,
+                "size": 11.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 20",
+        "type": "TEXT_BOX",
+        "left": 728.6,
+        "top": 260.6,
+        "width": 154.8,
+        "height": 97.2,
+        "text": "Justifique\npor que cada\nagente existe.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Justifique",
+            "runs": [
+              {
+                "text": "Justifique",
+                "bold": true,
+                "size": 21.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "por que cada",
+            "runs": [
+              {
+                "text": "por que cada",
+                "bold": true,
+                "size": 21.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "agente existe.",
+            "runs": [
+              {
+                "text": "agente existe.",
+                "bold": true,
+                "size": 21.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "19",
+        "paragraphs": [
+          {
+            "text": "19",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "shapes": [
+      {
+        "name": "Text 0",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 72.0,
+        "width": 223.2,
+        "height": 21.6,
+        "text": "A ideia central",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "A ideia central",
+            "runs": [
+              {
+                "text": "A ideia central",
+                "bold": null,
+                "size": 12.0,
+                "color": "3000FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 1",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 118.8,
+        "width": 626.4,
+        "height": 104.4,
+        "text": "Agentes não precisam\nfazer tudo sozinhos.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Agentes não precisam",
+            "runs": [
+              {
+                "text": "Agentes não precisam",
+                "bold": true,
+                "size": 41.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "fazer tudo sozinhos.",
+            "runs": [
+              {
+                "text": "fazer tudo sozinhos.",
+                "bold": true,
+                "size": 41.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 2",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 255.6,
+        "width": 626.4,
+        "height": 66.2,
+        "text": "Com A2A, eles podem descobrir capacidades,\ndelegar trabalho e trocar resultados.",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Com A2A, eles podem descobrir capacidades,",
+            "runs": [
+              {
+                "text": "Com A2A, eles podem descobrir capacidades,",
+                "bold": null,
+                "size": 22.0,
+                "color": "E6E3FF",
+                "font": "Arial"
+              }
+            ]
+          },
+          {
+            "text": "delegar trabalho e trocar resultados.",
+            "runs": [
+              {
+                "text": "delegar trabalho e trocar resultados.",
+                "bold": null,
+                "size": 22.0,
+                "color": "E6E3FF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shape 3",
+        "type": "AUTO_SHAPE",
+        "left": 59.0,
+        "top": 374.4,
+        "width": 385.2,
+        "height": 50.4,
+        "text": "",
+        "fill": "3000FF",
+        "line": "3000FF",
+        "paragraphs": []
+      },
+      {
+        "name": "Text 4",
+        "type": "TEXT_BOX",
+        "left": 79.2,
+        "top": 390.2,
+        "width": 345.6,
+        "height": 18.0,
+        "text": "AGENTE  →  AGENTE  →  RESULTADO",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "AGENTE  →  AGENTE  →  RESULTADO",
+            "runs": [
+              {
+                "text": "AGENTE  →  AGENTE  →  RESULTADO",
+                "bold": true,
+                "size": 15.0,
+                "color": "FFFFFF",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Text 5",
+        "type": "TEXT_BOX",
+        "left": 59.0,
+        "top": 466.6,
+        "width": 324.0,
+        "height": 14.4,
+        "text": "Fonte técnica: A2A Protocol v1.0.0",
+        "fill_type": "BACKGROUND (5)",
+        "paragraphs": [
+          {
+            "text": "Fonte técnica: A2A Protocol v1.0.0",
+            "runs": [
+              {
+                "text": "Fonte técnica: A2A Protocol v1.0.0",
+                "bold": null,
+                "size": 8.0,
+                "color": "BFC0CD",
+                "font": "Arial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Slide Number Placeholder 0",
+        "type": "PLACEHOLDER",
+        "left": 908.6,
+        "top": 508.3,
+        "width": 63.0,
+        "height": 23.6,
+        "text": "20",
+        "paragraphs": [
+          {
+            "text": "20",
+            "runs": []
+          }
+        ]
+      }
+    ]
+  }
+]

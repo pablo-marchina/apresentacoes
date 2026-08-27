@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="h-full bg-[#0A0A14] text-[#272727] antialiased select-none">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A2A: Agentes que colaboram | Inteli Academy</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#350EFF',
+              dark: '#2708CC',
+              light: '#5A38FF',
+            },
+            deepBlack: '#0A0A14',
+            offWhite: '#F5F5F7',
+            graphite: '#272727',
+            textGray: '#5D5D66',
+            softGray: '#E6E6EC',
+            lavender: '#EEEDF8',
+            accentYellow: '#FFE57F',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Menlo', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --slide-w: 1920px;
+      --slide-h: 1080px;
+      --electric-blue: #350EFF;
+      --deep-black: #0A0A14;
+      --off-white: #F5F5F7;
+      --graphite: #272727;
+      --gray: #5D5D66;
+      --soft-gray: #E6E6EC;
+      --lavender: #EEEDF8;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: var(--deep-black);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    #presentation-viewport {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    #slide-stage {
+      width: var(--slide-w);
+      height: var(--slide-h);
+      flex-shrink: 0;
+      position: relative;
+      transform-origin: center center;
+      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
+      background-color: var(--off-white);
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+      box-sizing: border-box;
+    }
+
+    .slide.active {
+      display: flex;
+      opacity: 1;
+      z-index: 10;
+    }
+
+    /* Print styling for direct PDF export */
+    @media print {
+      body {
+        overflow: visible !important;
+        background: transparent !important;
+      }
+      #presentation-viewport {
+        position: static !important;
+        display: block !important;
+      }
+      #slide-stage {
+        transform: none !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+      .slide {
+        display: flex !important;
+        opacity: 1 !important;
+        position: relative !important;
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+        width: 100vw !important;
+        height: 56.25vw !important; /* 16:9 ratio */
+        margin-bottom: 0 !important;
+      }
+      #controls-bar, #overview-modal, #help-modal {
+        display: none !important;
+      }
+      @page {
+        size: 16in 9in landscape;
+        margin: 0;
+      }
+    }
+
+    /* Custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(93, 93, 102, 0.3);
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="h-screen w-screen overflow-hidden bg-[#0A0A14] text-[#272727]">
+
+  <!-- Main Viewport that scales the 1920x1080 slide stage to fit browser window -->
+  <main id="presentation-viewport">
+    <div id="slide-stage" class="rounded-none overflow-hidden">
+
+      <!-- ==========================================
+           SLIDE 1: CAPA (Electric Blue Background)
+           ========================================== -->
+      <section class="slide active flex-col justify-between p-24 bg-[#350EFF] text-white relative overflow-hidden" data-slide="1" data-title="Capa">
+        <!-- Abstract geometric line vectors -->
+        <svg class="absolute right-0 top-0 w-[950px] h-full pointer-events-none opacity-20" viewBox="0 0 950 1080" fill="none">
+          <polygon points="120,0 950,0 950,600 350,1080 0,720" stroke="#EEEDF8" stroke-width="2" />
+          <line x1="280" y1="0" x2="850" y2="1080" stroke="#EEEDF8" stroke-width="1.5" stroke-dasharray="8 8" />
+          <polygon points="400,150 900,100 820,850 250,550" stroke="#FFFFFF" stroke-width="1.5" />
+          <circle cx="680" cy="420" r="280" stroke="#EEEDF8" stroke-width="1.5" />
+        </svg>
+
+        <!-- Top metadata -->
+        <div class="relative z-10">
+          <div class="text-2xl font-semibold tracking-tight text-white mb-2">Inteli Academy</div>
+          <div class="text-sm font-semibold tracking-[0.2em] text-[#EEEDF8] uppercase">FUNDAMENTOS DE IA APLICADA</div>
+        </div>
+
+        <!-- Center Main Title -->
+        <div class="relative z-10 my-auto max-w-5xl">
+          <h1 class="text-[112px] font-black tracking-tight text-white leading-none mb-6">
+            A2A
+          </h1>
+          <h2 class="text-5xl font-bold tracking-tight text-white mb-6">
+            Agentes que colaboram
+          </h2>
+          <p class="text-2xl text-[#EEEDF8] font-normal leading-relaxed max-w-3xl">
+            Como agentes descobrem capacidades, delegam tarefas e trocam resultados sem expor sua complexidade interna.
+          </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="relative z-10 flex items-center justify-between pt-8 border-t border-white/20 text-[#EEEDF8]/80 text-sm">
+          <div class="font-medium tracking-wide">Protocolo de Interoperabilidade Multi-Agente</div>
+          <span class="text-white font-semibold">01</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 2: AGENDA / VISÃO GERAL (Editorial Vertical List)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="2" data-title="Visão Geral">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">ESTRUTURA DA AULA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Do problema à colaboração entre agentes</h2>
+        </div>
+
+        <!-- Editorial 5-row list -->
+        <div class="my-auto divide-y divide-[#E6E6EC] border-y border-[#E6E6EC]">
+          <!-- Row 1 -->
+          <div class="flex items-center justify-between py-6">
+            <div class="flex items-center gap-10">
+              <span class="text-3xl font-extrabold text-[#350EFF] w-12">01</span>
+              <span class="text-2xl font-bold text-[#272727]">O que é um agente?</span>
+            </div>
+            <span class="text-sm font-semibold tracking-[0.15em] text-[#5D5D66] uppercase">AGENTE VS. CHATBOT</span>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="flex items-center justify-between py-6">
+            <div class="flex items-center gap-10">
+              <span class="text-3xl font-extrabold text-[#350EFF] w-12">02</span>
+              <span class="text-2xl font-bold text-[#272727]">Quando um agente precisa de outro?</span>
+            </div>
+            <span class="text-sm font-semibold tracking-[0.15em] text-[#5D5D66] uppercase">SISTEMAS MULTI-AGENTE</span>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="flex items-center justify-between py-6">
+            <div class="flex items-center gap-10">
+              <span class="text-3xl font-extrabold text-[#350EFF] w-12">03</span>
+              <span class="text-2xl font-bold text-[#272727]">A2A: O padrão aberto</span>
+            </div>
+            <span class="text-sm font-semibold tracking-[0.15em] text-[#350EFF] uppercase">INTEROPERABILIDADE</span>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="flex items-center justify-between py-6">
+            <div class="flex items-center gap-10">
+              <span class="text-3xl font-extrabold text-[#350EFF] w-12">04</span>
+              <span class="text-2xl font-bold text-[#272727]">Como a conversa acontece?</span>
+            </div>
+            <span class="text-sm font-semibold tracking-[0.15em] text-[#5D5D66] uppercase">TASKS • MESSAGES • ARTIFACTS</span>
+          </div>
+
+          <!-- Row 5 -->
+          <div class="flex items-center justify-between py-6">
+            <div class="flex items-center gap-10">
+              <span class="text-3xl font-extrabold text-[#350EFF] w-12">05</span>
+              <span class="text-2xl font-bold text-[#272727]">A2A × MCP</span>
+            </div>
+            <span class="text-sm font-semibold tracking-[0.15em] text-[#5D5D66] uppercase">AGENTE ↔ AGENTE / AGENTE ↔ FERRAMENTA</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center text-sm text-[#5D5D66]">
+          <span>A2A Protocol</span>
+          <span class="font-semibold">02</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 3: DIVISOR 1
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#0A0A14] text-white relative overflow-hidden" data-slide="3" data-title="Seção 1">
+        <div class="text-sm font-semibold tracking-[0.2em] text-[#350EFF] uppercase">PARTE 01</div>
+
+        <div class="my-auto max-w-4xl">
+          <div class="text-[140px] font-black text-[#350EFF] leading-none mb-4">1</div>
+          <h2 class="text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">O que é um agente?</h2>
+          <p class="text-2xl text-[#5D5D66] font-medium tracking-wide uppercase">
+            ANTES DO A2A, PRECISAMOS DEFINIR O QUE ESTÁ SE COMUNICANDO
+          </p>
+        </div>
+
+        <div class="flex justify-between items-center text-sm text-[#5D5D66]">
+          <span class="font-semibold uppercase tracking-wider">FUNDAMENTOS</span>
+          <span class="font-semibold">03</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 4: PONTO DE PARTIDA (Ciclo do Agente)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="4" data-title="Ponto de Partida">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">PONTO DE PARTIDA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Um agente recebe um objetivo e age sobre o ambiente</h2>
+        </div>
+
+        <!-- 3 Step Cards -->
+        <div class="grid grid-cols-3 gap-8 my-auto">
+          <!-- Step 1 -->
+          <div class="bg-white rounded-[24px] p-9 border border-[#E6E6EC] flex flex-col justify-between h-72">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-3">01 • ENTRADA</div>
+              <h3 class="text-3xl font-bold text-[#272727] mb-2">Objetivo</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">+ Contexto e restrições fornecidas pelo usuário.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Meta inicial</div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-white rounded-[24px] p-9 border border-[#E6E6EC] flex flex-col justify-between h-72">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-3">02 • DECISÃO</div>
+              <h3 class="text-3xl font-bold text-[#272727] mb-2">Planeja</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">+ Raciocina e escolhe os próximos passos.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Deliberação</div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-white rounded-[24px] p-9 border border-[#E6E6EC] flex flex-col justify-between h-72">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-3">03 • AÇÃO</div>
+              <h3 class="text-3xl font-bold text-[#272727] mb-2">Ferramentas</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">+ Executa chamadas e altera o estado do sistema.</p>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Execução</div>
+          </div>
+        </div>
+
+        <!-- Faixa de Destaque -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">OBSERVAÇÃO</span>
+            <span class="text-lg text-[#272727]">Analisa o retorno → ajusta o plano → tenta novamente → conclui a tarefa</span>
+          </div>
+          <span class="text-sm font-bold text-[#350EFF] uppercase tracking-wider">Ciclo Fechado</span>
+        </div>
+
+        <!-- Bottom Takeaway -->
+        <div class="flex justify-between items-center text-base text-[#5D5D66] pt-2">
+          <span><strong>Agente ≠ apenas texto gerado.</strong> O diferencial é a capacidade de decidir e executar ações orientadas a um objetivo.</span>
+          <span class="font-semibold">04</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 5: A DISTINÇÃO (Chatbot vs Agente)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="5" data-title="A Distinção">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">A DISTINÇÃO</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Chatbot responde. Agente persegue um objetivo.</h2>
+        </div>
+
+        <!-- 2 Comparison Columns -->
+        <div class="grid grid-cols-2 gap-10 my-auto">
+          <!-- Chatbot -->
+          <div class="bg-white rounded-[24px] p-10 border border-[#E6E6EC] flex flex-col justify-between h-80">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#5D5D66] mb-4">REATIVO</div>
+              <h3 class="text-3xl font-bold text-[#272727] mb-6">CHATBOT</h3>
+              <ul class="space-y-4 text-lg text-[#5D5D66]">
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#5D5D66]"></span> Reage à mensagem do usuário</li>
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#5D5D66]"></span> Gera uma resposta em turno único</li>
+                <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-[#5D5D66]"></span> Fluxo curto e baixa autonomia</li>
+              </ul>
+            </div>
+            <div class="text-sm font-semibold text-[#5D5D66]">Foco: Diálogo</div>
+          </div>
+
+          <!-- Agente -->
+          <div class="bg-white rounded-[24px] p-10 border-2 border-[#350EFF] flex flex-col justify-between h-80">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-4">AUTÔNOMO</div>
+              <h3 class="text-3xl font-bold text-[#272727] mb-6">AGENTE</h3>
+              <ul class="space-y-4 text-lg text-[#272727] font-medium">
+                <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-[#350EFF]"></span> Interpreta um objetivo de alto nível</li>
+                <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-[#350EFF]"></span> Planeja e decompõe etapas necessárias</li>
+                <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-[#350EFF]"></span> Usa ferramentas e pode <strong>delegar</strong> tarefas</li>
+              </ul>
+            </div>
+            <div class="text-sm font-bold text-[#350EFF]">Foco: Resolução de Tarefas</div>
+          </div>
+        </div>
+
+        <!-- Faixa de Destaque -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">PERGUNTA-CHAVE</span>
+            <span class="text-xl font-bold text-[#272727]">“Quem decide qual é o próximo passo da execução?”</span>
+          </div>
+          <span class="font-semibold text-sm text-[#5D5D66]">05</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 6: DIVISOR 2
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#0A0A14] text-white relative overflow-hidden" data-slide="6" data-title="Seção 2">
+        <div class="text-sm font-semibold tracking-[0.2em] text-[#350EFF] uppercase">PARTE 02</div>
+
+        <div class="my-auto max-w-4xl">
+          <div class="text-[140px] font-black text-[#350EFF] leading-none mb-4">2</div>
+          <h2 class="text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">Quando um agente precisa de outro?</h2>
+          <p class="text-2xl text-[#5D5D66] font-medium tracking-wide uppercase">
+            O PROBLEMA APARECE QUANDO UMA TAREFA COMBINA ESPECIALISTAS DIFERENTES
+          </p>
+        </div>
+
+        <div class="flex justify-between items-center text-sm text-[#5D5D66]">
+          <span class="font-semibold uppercase tracking-wider">ESPECIALIZAÇÃO</span>
+          <span class="font-semibold">06</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 7: SISTEMA MULTI-AGENTE
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="7" data-title="Sistema Multi-Agente">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">SISTEMA MULTI-AGENTE</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Dividir para especializar</h2>
+          <p class="text-[#5D5D66] text-xl mt-2">Um agente pode coordenar um trabalho maior sem executar todas as capacidades sozinho.</p>
+        </div>
+
+        <!-- Orchestrator & Specialist Flow -->
+        <div class="my-auto flex flex-col items-center w-full max-w-5xl mx-auto">
+          <!-- Orchestrator Box -->
+          <div class="bg-[#350EFF] text-white px-10 py-5 rounded-2xl shadow-sm text-center w-84">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#EEEDF8] mb-1.5">COORDENADOR</div>
+            <h3 class="text-2xl font-bold">AGENTE ORQUESTRADOR</h3>
+          </div>
+
+          <!-- Architectural SVG Branching Tree Connector -->
+          <div class="w-full h-16 my-1">
+            <svg class="w-full h-full" viewBox="0 0 1024 64" fill="none">
+              <!-- Central trunk coming down from Orchestrator -->
+              <path d="M 512,0 L 512,28" stroke="#350EFF" stroke-width="2" stroke-linecap="round" />
+              
+              <!-- Left branch to Specialist 1 -->
+              <path d="M 512,28 L 160,28 L 160,52" stroke="#350EFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+              <polygon points="154,50 160,60 166,50" fill="#350EFF" />
+              
+              <!-- Center branch to Specialist 2 -->
+              <path d="M 512,28 L 512,52" stroke="#350EFF" stroke-width="2" stroke-linecap="round" />
+              <polygon points="506,50 512,60 518,50" fill="#350EFF" />
+              
+              <!-- Right branch to Specialist 3 -->
+              <path d="M 512,28 L 864,28 L 864,52" stroke="#350EFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+              <polygon points="858,50 864,60 870,50" fill="#350EFF" />
+            </svg>
+          </div>
+
+          <!-- 3 Specialists -->
+          <div class="grid grid-cols-3 gap-8 w-full">
+            <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] text-center">
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-2">ESPECIALISTA 01</div>
+              <h4 class="text-2xl font-bold text-[#272727]">Pesquisa</h4>
+              <p class="text-[#5D5D66] text-base mt-2">Busca, extração e síntese</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] text-center">
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-2">ESPECIALISTA 02</div>
+              <h4 class="text-2xl font-bold text-[#272727]">Finanças</h4>
+              <p class="text-[#5D5D66] text-base mt-2">Cálculo e validação de regras</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] text-center">
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-2">ESPECIALISTA 03</div>
+              <h4 class="text-2xl font-bold text-[#272727]">Domínio</h4>
+              <p class="text-[#5D5D66] text-base mt-2">Regras de negócio específicas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">PERGUNTA FUNDAMENTAL</span>
+            <span class="text-lg font-medium text-[#272727]">Como esses agentes se encontram, negociam e se entendem?</span>
+          </div>
+          <span class="font-semibold text-sm text-[#5D5D66]">07</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 8: O GARGALO (Sem Padrão)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="8" data-title="O Gargalo">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">O GARGALO</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Sem um padrão, a colaboração vira integração artesanal</h2>
+        </div>
+
+        <!-- 3 Core Bottleneck Cards -->
+        <div class="my-auto grid grid-cols-3 gap-8 w-full">
+          
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-72">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-3">01 • FORMATOS ISOLADOS</div>
+              <h3 class="text-3xl font-extrabold text-[#272727] mb-3">Cada um fala uma língua</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">Cada time cria seu próprio JSON, API ou SDK fechado, sem contrato público.</p>
+            </div>
+            <div class="text-xs font-semibold text-[#5D5D66]">Sem interoperabilidade</div>
+          </div>
+
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-72">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-3">02 • ACOPLAMENTO RÍGIDO</div>
+              <h3 class="text-3xl font-extrabold text-[#272727] mb-3">Mudou um, quebrou o outro</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">O cliente precisa conhecer a lógica e os modelos internos do especialista.</p>
+            </div>
+            <div class="text-xs font-semibold text-[#5D5D66]">Alta dependência</div>
+          </div>
+
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] shadow-sm flex flex-col justify-between h-72">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-3">03 • INESCALÁVEL (N × N)</div>
+              <h3 class="text-3xl font-extrabold text-[#272727] mb-3">Conexões sob medida</h3>
+              <p class="text-[#5D5D66] text-lg leading-relaxed">Adicionar novos agentes exige escrever novos adaptadores e conectores do zero.</p>
+            </div>
+            <div class="text-xs font-semibold text-[#5D5D66]">Custo de integração</div>
+          </div>
+
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">O RESULTADO</span>
+            <span class="text-lg text-[#272727]">Acoplamento excessivo • Duplicação de esforço • Impossibilidade de descobrir agentes em tempo real</span>
+          </div>
+          <span class="text-sm font-bold text-[#350EFF] uppercase tracking-wider">Integração Artesanal</span>
+        </div>
+
+        <!-- Takeaway Card Ativo -->
+        <div class="bg-[#350EFF] text-white rounded-2xl px-8 py-5 flex items-center justify-between shadow-sm">
+          <span class="text-lg font-bold">O A2A resolve isso: define um padrão aberto para que agentes colaborem como caixas-pretas desacopladas.</span>
+          <span class="font-semibold text-sm text-[#EEEDF8]">08</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 9: DIVISOR 3
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#0A0A14] text-white relative overflow-hidden" data-slide="9" data-title="Seção 3">
+        <div class="text-sm font-semibold tracking-[0.2em] text-[#350EFF] uppercase">PARTE 03</div>
+
+        <div class="my-auto max-w-4xl">
+          <div class="text-[140px] font-black text-[#350EFF] leading-none mb-4">3</div>
+          <h2 class="text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">A2A</h2>
+          <p class="text-2xl text-[#5D5D66] font-medium tracking-wide uppercase">
+            UM PADRÃO ABERTO PARA INTEROPERABILIDADE ENTRE AGENTES
+          </p>
+        </div>
+
+        <div class="flex justify-between items-center text-sm text-[#5D5D66]">
+          <span class="font-semibold uppercase tracking-wider">O PROTOCOLO</span>
+          <span class="font-semibold">09</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 10: DEFINIÇÃO A2A
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="10" data-title="Definição A2A">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">DEFINIÇÃO</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">A2A = Agent2Agent</h2>
+          <p class="text-[#5D5D66] text-xl mt-2 max-w-4xl">
+            Um padrão aberto para que agentes independentes descubram capacidades, troquem mensagens e gerenciem tarefas <strong>sem expor sua implementação interna</strong>.
+          </p>
+        </div>
+
+        <!-- 3 Pillars -->
+        <div class="grid grid-cols-3 gap-8 my-auto">
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] flex flex-col justify-between h-64">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-2">01 • DESCOBRIR</div>
+              <h3 class="text-2xl font-bold text-[#272727] mt-1">“O que você sabe fazer?”</h3>
+            </div>
+            <p class="text-[#5D5D66] text-base">Consulta de capacidades via Agent Card</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] flex flex-col justify-between h-64">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-2">02 • DELEGAR</div>
+              <h3 class="text-2xl font-bold text-[#272727] mt-1">“Execute esta tarefa.”</h3>
+            </div>
+            <p class="text-[#5D5D66] text-base">Criação e gestão de Tasks assíncronas</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] flex flex-col justify-between h-64">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-2">03 • RECEBER</div>
+              <h3 class="text-2xl font-bold text-[#272727] mt-1">“Aqui está o resultado.”</h3>
+            </div>
+            <p class="text-[#5D5D66] text-base">Entrega de Artefatos estruturados</p>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">CAIXA-PRETA</span>
+            <span class="text-lg text-[#272727]">O agente remoto continua independente: o cliente conhece o <strong>contrato de interação</strong>, não seus modelos ou ferramentas internas.</span>
+          </div>
+          <span class="font-semibold text-sm text-[#5D5D66]">10</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 11: DISCOVERY & AGENT CARD
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="11" data-title="Discovery & Agent Card">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">01 • DISCOVERY</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Antes de conversar, descubra o agente</h2>
+          <p class="text-[#5D5D66] text-xl mt-2">O <strong>Agent Card</strong> descreve a identidade e as capacidades oferecidas pelo agente.</p>
+        </div>
+
+        <!-- 2 Columns -->
+        <div class="grid grid-cols-2 gap-10 my-auto items-stretch">
+          <!-- Code Card -->
+          <div class="bg-white text-[#272727] p-8 rounded-[24px] border border-[#E6E6EC] text-base flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-widest text-[#350EFF] pb-3 mb-3 border-b border-[#E6E6EC]">
+                agent-card.json
+              </div>
+              <pre class="font-mono text-[#272727] leading-relaxed"><span class="text-[#350EFF] font-bold">name</span>: "Travel Agent"
+<span class="text-[#350EFF] font-bold">description</span>: "Planeja viagens"
+<span class="text-[#350EFF] font-bold">skills</span>:
+  • buscar_voo
+  • comparar_hotel
+  • montar_roteiro</pre>
+            </div>
+            <div class="text-xs font-medium text-[#5D5D66] pt-3 border-t border-[#E6E6EC]">
+              Contrato público de capacidades
+            </div>
+          </div>
+
+          <!-- Negotiation Explanation -->
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-2">PERGUNTA</div>
+              <h3 class="text-4xl font-extrabold text-[#272727] mb-6">“Você consegue fazer isso?”</h3>
+              <ul class="space-y-4 text-lg text-[#5D5D66]">
+                <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-[#350EFF]"></span> Descobre capacidades antes de fazer requisições</li>
+                <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-[#350EFF]"></span> Decide dinamicamente se vale delegar o trabalho</li>
+              </ul>
+            </div>
+            <div class="text-xs font-semibold text-[#5D5D66]">Padronizado: A2A AgentCard v1.0.0</div>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center text-sm text-[#5D5D66]">
+          <span>Fonte: A2A Protocol v1.0.0 — Agent Card</span>
+          <span class="font-semibold">11</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 12: INTERACTION MODEL
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="12" data-title="Interaction Model">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">02 • INTERACTION MODEL</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">A unidade de trabalho é a Task</h2>
+        </div>
+
+        <!-- 3 Core concepts -->
+        <div class="grid grid-cols-3 gap-8 my-auto">
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] text-center">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#5D5D66] mb-2">COMUNICAÇÃO</div>
+            <h3 class="text-3xl font-bold text-[#272727]">MESSAGE</h3>
+            <p class="text-[#5D5D66] text-base mt-2">Instrui e atualiza a conversa</p>
+          </div>
+
+          <!-- Card Ativo #350EFF -->
+          <div class="bg-[#350EFF] text-white p-8 rounded-[24px] text-center shadow-sm">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#EEEDF8] mb-2">EXECUÇÃO</div>
+            <h3 class="text-3xl font-bold text-white">TASK</h3>
+            <p class="text-[#EEEDF8] text-base mt-2">Controla o trabalho assíncrono</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] text-center">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#5D5D66] mb-2">ENTREGA</div>
+            <h3 class="text-3xl font-bold text-[#272727]">ARTIFACT</h3>
+            <p class="text-[#5D5D66] text-base mt-2">Entrega o resultado final</p>
+          </div>
+        </div>
+
+        <!-- Pipeline Flow -->
+        <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC]">
+          <div class="text-xs font-semibold uppercase tracking-widest text-[#5D5D66] mb-3">EXEMPLO DE CICLO</div>
+          <div class="flex items-center justify-between gap-4 text-base font-semibold">
+            <div class="p-3.5 rounded-xl bg-[#F5F5F7] text-[#272727] flex-1 text-center font-bold">
+              “Busque um hotel em SP”
+            </div>
+            <span class="text-[#350EFF] font-bold text-xl">→</span>
+            <div class="p-3.5 rounded-xl bg-[#EEEDF8] text-[#350EFF] font-bold flex-1 text-center">
+              TASK: working
+            </div>
+            <span class="text-[#350EFF] font-bold text-xl">→</span>
+            <div class="p-3.5 rounded-xl bg-[#F5F5F7] text-[#272727] font-bold flex-1 text-center">
+              ARTIFACT: opções.json
+            </div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <span class="text-base text-[#272727]">Mensagens carregam a comunicação; o resultado final concreto é entregue como <strong>Artifact</strong>.</span>
+          <span class="font-semibold text-sm text-[#5D5D66]">12</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 13: TASK LIFECYCLE
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="13" data-title="Task Lifecycle">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">03 • LIFECYCLE</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Uma Task tem estado — não é só uma requisição</h2>
+          <p class="text-[#5D5D66] text-xl mt-2">Isso viabiliza tarefas longas, assíncronas e com atualizações de progresso em tempo real.</p>
+        </div>
+
+        <!-- 4 Lifecycle Stages -->
+        <div class="grid grid-cols-4 gap-6 my-auto">
+          <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] text-center">
+            <span class="text-xs font-bold text-[#5D5D66] uppercase tracking-wider">submitted</span>
+            <div class="text-2xl font-bold text-[#272727] mt-2">Recebida</div>
+          </div>
+
+          <div class="bg-white p-7 rounded-[24px] border-2 border-[#350EFF] text-center">
+            <span class="text-xs font-bold text-[#350EFF] uppercase tracking-wider">working</span>
+            <div class="text-2xl font-bold text-[#272727] mt-2">Processando</div>
+          </div>
+
+          <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] text-center">
+            <span class="text-xs font-bold text-[#5D5D66] uppercase tracking-wider">input-required</span>
+            <div class="text-2xl font-bold text-[#272727] mt-2">Aguarda Dado</div>
+          </div>
+
+          <div class="bg-white p-7 rounded-[24px] border border-[#E6E6EC] text-center">
+            <span class="text-xs font-bold text-[#5D5D66] uppercase tracking-wider">completed</span>
+            <div class="text-2xl font-bold text-[#272727] mt-2">Concluída</div>
+          </div>
+        </div>
+
+        <!-- 3 Feature Cards -->
+        <div class="grid grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC]">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-1">STREAMING</div>
+            <div class="text-lg font-bold text-[#272727]">Tempo Real</div>
+            <div class="text-sm text-[#5D5D66] mt-1">Atualizações de tokens e progresso</div>
+          </div>
+
+          <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC]">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-1">PUSH</div>
+            <div class="text-lg font-bold text-[#272727]">Notificações</div>
+            <div class="text-sm text-[#5D5D66] mt-1">Avisos para tarefas de longa duração</div>
+          </div>
+
+          <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC]">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-1">RETRY / RESUME</div>
+            <div class="text-lg font-bold text-[#272727]">Continuidade</div>
+            <div class="text-sm text-[#5D5D66] mt-1">Retoma o trabalho sem recomeçar do zero</div>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center text-sm text-[#5D5D66]">
+          <span>Fonte: A2A Protocol v1.0.0 — Task lifecycle e streaming</span>
+          <span class="font-semibold">13</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 14: DIVISOR 4
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#0A0A14] text-white relative overflow-hidden" data-slide="14" data-title="Seção 4">
+        <div class="text-sm font-semibold tracking-[0.2em] text-[#350EFF] uppercase">PARTE 04</div>
+
+        <div class="my-auto max-w-4xl">
+          <div class="text-[140px] font-black text-[#350EFF] leading-none mb-4">4</div>
+          <h2 class="text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">Como os agentes conversam?</h2>
+          <p class="text-2xl text-[#5D5D66] font-medium tracking-wide uppercase">
+            A2A ORGANIZA DESCOBERTA, INTERAÇÃO, ESTADO E ENTREGA
+          </p>
+        </div>
+
+        <div class="flex justify-between items-center text-sm text-[#5D5D66]">
+          <span class="font-semibold uppercase tracking-wider">ARQUITETURA</span>
+          <span class="font-semibold">14</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 15: ARQUITETURA A2A
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="15" data-title="Arquitetura A2A">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">ARQUITETURA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">O agente remoto continua independente</h2>
+        </div>
+
+        <!-- 3-Part Flow -->
+        <div class="grid grid-cols-12 gap-8 my-auto items-center">
+          <!-- Client -->
+          <div class="col-span-5 bg-white p-8 rounded-[24px] border border-[#E6E6EC]">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#5D5D66] mb-3">AGENTE CLIENTE</div>
+            <div class="space-y-3 text-lg font-bold text-[#272727]">
+              <div>• LLM Principal</div>
+              <div>• Ferramentas Locais</div>
+              <div>• Estado Local</div>
+            </div>
+          </div>
+
+          <!-- Protocol Bridge -->
+          <div class="col-span-2 bg-[#350EFF] text-white p-6 rounded-[24px] text-center shadow-sm">
+            <div class="text-2xl font-black">A2A</div>
+            <div class="text-xs text-[#EEEDF8] mt-2 font-medium leading-tight">
+              HTTP(S)<br>Mensagens<br>Tasks
+            </div>
+          </div>
+
+          <!-- Remote (Black Box) -->
+          <div class="col-span-5 bg-[#0A0A14] text-white p-8 rounded-[24px]">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF]">AGENTE REMOTO</span>
+              <span class="text-xs font-semibold text-[#5D5D66] uppercase">Caixa-Preta</span>
+            </div>
+            <div class="space-y-3 text-lg font-bold text-white">
+              <div>• LLM + Tools Próprios</div>
+              <div>• Dados Próprios</div>
+              <div>• Implementação Oculta</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <span class="text-base text-[#272727]">O cliente conhece o <strong>contrato de interação</strong> — não a implementação interna do agente remoto.</span>
+          <span class="font-semibold text-sm text-[#5D5D66]">15</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 16: A2A × MCP (Comparação Editorial)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="16" data-title="A2A × MCP">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">A COMPARAÇÃO QUE MAIS GERA DÚVIDA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">A2A × MCP</h2>
+        </div>
+
+        <!-- 2 Panels -->
+        <div class="grid grid-cols-2 gap-10 my-auto">
+          <!-- MCP -->
+          <div class="bg-white p-9 rounded-[24px] border border-[#E6E6EC] flex flex-col justify-between h-80">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#5D5D66] mb-2">MODEL CONTEXT PROTOCOL</div>
+              <h3 class="text-3xl font-bold text-[#272727] mb-2">MCP</h3>
+              <div class="text-base font-semibold text-[#350EFF] mb-3 uppercase">AGENTE ↔ FERRAMENTA / CONTEXTO</div>
+              <p class="text-[#5D5D66] text-base mb-2">Ex.: banco, API, arquivo, sistema interno.</p>
+              <p class="text-[#272727] text-base font-medium"><strong>Foco:</strong> fornecer capacidades e contexto ao agente.</p>
+            </div>
+            <div class="text-xs font-semibold text-[#5D5D66]">Conexão com Recursos</div>
+          </div>
+
+          <!-- A2A (Destacado com Borda #350EFF) -->
+          <div class="bg-white p-9 rounded-[24px] border-2 border-[#350EFF] flex flex-col justify-between h-80">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-2">AGENT TO AGENT PROTOCOL</div>
+              <h3 class="text-3xl font-bold text-[#272727] mb-2">A2A</h3>
+              <div class="text-base font-semibold text-[#350EFF] mb-3 uppercase">AGENTE ↔ AGENTE</div>
+              <p class="text-[#5D5D66] text-base mb-2">Ex.: agente financeiro, agente de viagens.</p>
+              <p class="text-[#272727] text-base font-medium"><strong>Foco:</strong> descoberta, delegação e colaboração autônoma.</p>
+            </div>
+            <div class="text-xs font-bold text-[#350EFF]">Conexão entre Pares</div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <div class="flex items-center gap-6">
+            <span class="text-sm font-bold uppercase tracking-[0.15em] text-[#350EFF] shrink-0">REGRA DE BOLSO</span>
+            <span class="text-lg font-bold text-[#272727]">MCP conecta o agente ao que ele usa. A2A conecta o agente a quem ele colabora.</span>
+          </div>
+          <span class="font-semibold text-sm text-[#5D5D66]">16</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 17: CASO PRÁTICO (Viagem a SP)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="17" data-title="Caso Prático">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">CASO PRÁTICO</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">“Planeje uma viagem para São Paulo”</h2>
+          <p class="text-[#5D5D66] text-xl mt-2">Um único pedido pode virar várias tarefas especializadas.</p>
+        </div>
+
+        <!-- Diagram -->
+        <div class="my-auto flex flex-col items-center w-full max-w-5xl mx-auto">
+          <div class="bg-[#350EFF] text-white px-10 py-4 rounded-2xl font-bold text-xl text-center w-84 shadow-sm">
+            ORQUESTRADOR
+          </div>
+
+          <!-- Architectural SVG Branching Tree Connector -->
+          <div class="w-full h-16 my-1">
+            <svg class="w-full h-full" viewBox="0 0 1024 64" fill="none">
+              <!-- Central trunk -->
+              <path d="M 512,0 L 512,28" stroke="#350EFF" stroke-width="2" stroke-linecap="round" />
+              
+              <!-- Left branch to Voo -->
+              <path d="M 512,28 L 160,28 L 160,52" stroke="#350EFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+              <polygon points="154,50 160,60 166,50" fill="#350EFF" />
+              
+              <!-- Center branch to Hotel -->
+              <path d="M 512,28 L 512,52" stroke="#350EFF" stroke-width="2" stroke-linecap="round" />
+              <polygon points="506,50 512,60 518,50" fill="#350EFF" />
+              
+              <!-- Right branch to Transporte -->
+              <path d="M 512,28 L 864,28 L 864,52" stroke="#350EFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+              <polygon points="858,50 864,60 870,50" fill="#350EFF" />
+            </svg>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 w-full">
+            <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] text-center">
+              <h4 class="text-2xl font-bold text-[#272727]">VOO</h4>
+              <p class="text-[#5D5D66] text-base mt-2">Buscar opções e horários</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] text-center">
+              <h4 class="text-2xl font-bold text-[#272727]">HOTEL</h4>
+              <p class="text-[#5D5D66] text-base mt-2">Comparar preços e local</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-[24px] border border-[#E6E6EC] text-center">
+              <h4 class="text-2xl font-bold text-[#272727]">TRANSPORTE</h4>
+              <p class="text-[#5D5D66] text-base mt-2">Estimar deslocamentos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Faixa Lavender -->
+        <div class="bg-[#EEEDF8] rounded-2xl px-8 py-5 flex items-center justify-between text-[#272727]">
+          <span class="text-base text-[#272727]">O orquestrador não precisa saber como cada especialista calcula seu resultado interno.</span>
+          <span class="font-semibold text-sm text-[#5D5D66]">17</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 18: NÃO É MÁGICA (Desafios)
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="18" data-title="Desafios">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">NÃO É MÁGICA</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">A2A resolve interoperabilidade — não resolve todos os problemas</h2>
+        </div>
+
+        <!-- 5 Cards Grid -->
+        <div class="grid grid-cols-3 gap-6 my-auto">
+          <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC]">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-1">SEGURANÇA</div>
+            <div class="text-xl font-bold text-[#272727]">Quem pode delegar o quê?</div>
+          </div>
+
+          <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC]">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-1">CONFIANÇA</div>
+            <div class="text-xl font-bold text-[#272727]">Como validar o resultado?</div>
+          </div>
+
+          <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC]">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-1">CUSTO</div>
+            <div class="text-xl font-bold text-[#272727]">Mais agentes = mais chamadas</div>
+          </div>
+
+          <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC]">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-1">LATÊNCIA</div>
+            <div class="text-xl font-bold text-[#272727]">Mais etapas podem atrasar</div>
+          </div>
+
+          <div class="bg-white p-6 rounded-[24px] border border-[#E6E6EC] col-span-2">
+            <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-1">OBSERVABILIDADE</div>
+            <div class="text-xl font-bold text-[#272727]">Como rastrear a cadeia de execução completa?</div>
+          </div>
+        </div>
+
+        <!-- Takeaway Card Ativo -->
+        <div class="bg-[#350EFF] text-white rounded-2xl px-8 py-5 flex items-center justify-between">
+          <span class="text-lg font-bold">A pergunta de arquitetura deixa de ser “qual agente?” e passa a ser “qual colaboração vale a pena?”</span>
+          <span class="font-semibold text-sm text-[#EEEDF8]">18</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 19: ATIVIDADE PRÁTICA
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#F5F5F7] text-[#272727] relative" data-slide="19" data-title="Atividade Prática">
+        <!-- Header -->
+        <div>
+          <span class="text-base font-semibold uppercase tracking-[0.15em] text-[#350EFF]">ATIVIDADE</span>
+          <h2 class="text-5xl font-extrabold text-[#272727] tracking-tight mt-2">Desenhe seu primeiro sistema multi-agente</h2>
+          <p class="text-[#5D5D66] text-xl mt-2"><strong>Cenário:</strong> Um sistema de atendimento para uma empresa de tecnologia.</p>
+        </div>
+
+        <!-- 2 Columns: Questions & Challenge -->
+        <div class="grid grid-cols-12 gap-8 my-auto items-stretch">
+          <!-- 5 Questions List -->
+          <div class="col-span-8 bg-white p-8 rounded-[24px] border border-[#E6E6EC] divide-y divide-[#E6E6EC]">
+            <div class="flex items-center gap-6 py-3">
+              <span class="text-lg font-extrabold text-[#350EFF] w-8">01</span>
+              <span class="text-lg font-bold text-[#272727]">Quais agentes existem?</span>
+            </div>
+            <div class="flex items-center gap-6 py-3">
+              <span class="text-lg font-extrabold text-[#350EFF] w-8">02</span>
+              <span class="text-lg font-bold text-[#272727]">Qual agente orquestra?</span>
+            </div>
+            <div class="flex items-center gap-6 py-3">
+              <span class="text-lg font-extrabold text-[#350EFF] w-8">03</span>
+              <span class="text-lg font-bold text-[#272727]">Quando cada agente recebe uma Task?</span>
+            </div>
+            <div class="flex items-center gap-6 py-3">
+              <span class="text-lg font-extrabold text-[#350EFF] w-8">04</span>
+              <span class="text-lg font-bold text-[#272727]">O que é Message? O que é Artifact?</span>
+            </div>
+            <div class="flex items-center gap-6 py-3">
+              <span class="text-lg font-extrabold text-[#350EFF] w-8">05</span>
+              <span class="text-lg font-bold text-[#272727]">Que informação aparece no Agent Card?</span>
+            </div>
+          </div>
+
+          <!-- Challenge Box (Deep Black #0A0A14) -->
+          <div class="col-span-4 bg-[#0A0A14] text-white p-8 rounded-[24px] flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-[0.15em] text-[#350EFF] mb-4">DESAFIO</div>
+              <h3 class="text-4xl font-extrabold text-white leading-tight mb-4">
+                Justifique por que cada agente existe.
+              </h3>
+              <p class="text-[#5D5D66] text-base">
+                Evite criar agentes sem responsabilidade clara ou ganho real de desacoplamento.
+              </p>
+            </div>
+            <div class="text-xs font-semibold text-[#5D5D66]">Tempo estimado: 15 min</div>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center text-sm text-[#5D5D66]">
+          <span>Exercício Prático em Grupo</span>
+          <span class="font-semibold">19</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 20: SLIDE DE IMPACTO / FECHAMENTO
+           ========================================== -->
+      <section class="slide flex-col justify-between p-24 bg-[#350EFF] text-white relative overflow-hidden" data-slide="20" data-title="Conclusão">
+        <!-- Header -->
+        <div>
+          <div class="text-base font-semibold uppercase tracking-[0.2em] text-[#EEEDF8]">A IDEIA CENTRAL</div>
+        </div>
+
+        <!-- Big Impact Phrase -->
+        <div class="my-auto max-w-5xl">
+          <h2 class="text-[88px] font-black tracking-tight text-white leading-[1.02] mb-8">
+            Agentes não precisam <br>
+            <span class="text-[#FFE57F]">fazer tudo sozinhos.</span>
+          </h2>
+          <p class="text-3xl text-[#EEEDF8] font-normal leading-relaxed mb-12 max-w-3xl">
+            Com A2A, eles podem descobrir capacidades, delegar trabalho e trocar resultados.
+          </p>
+
+          <!-- Pipeline sutil inferior -->
+          <div class="inline-flex items-center gap-5 text-xl font-bold">
+            <span class="px-5 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white">AGENTE</span>
+            <span class="text-white">→</span>
+            <span class="px-5 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white">AGENTE</span>
+            <span class="text-white">→</span>
+            <span class="px-5 py-2.5 rounded-xl bg-[#FFE57F] text-[#272727]">RESULTADO</span>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="flex justify-between items-center text-[#EEEDF8]/80 text-sm pt-8 border-t border-white/20">
+          <span>Fonte técnica: A2A Protocol v1.0.0</span>
+          <span class="font-semibold text-white">20</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================
+       FLOATING CONTROLS & PRESENTATION UI
+       ========================================== -->
+  <nav id="controls-bar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-4 py-2 rounded-full bg-[#0A0A14]/90 text-white backdrop-blur-md border border-[#272727] shadow-2xl transition-opacity duration-300 hover:opacity-100 opacity-90">
+    <button id="btn-prev" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Slide Anterior (← ou Backspace)">
+      <i data-lucide="chevron-left" class="w-5 h-5"></i>
+    </button>
+    
+    <button id="btn-overview" class="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-white/10 transition-colors text-xs font-semibold text-white/90 hover:text-white" title="Visão Geral (O)">
+      <i data-lucide="grid" class="w-4 h-4"></i>
+      <span id="slide-indicator">1 / 20</span>
+    </button>
+
+    <button id="btn-next" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Próximo Slide (→ ou Espaço)">
+      <i data-lucide="chevron-right" class="w-5 h-5"></i>
+    </button>
+
+    <div class="h-4 w-px bg-white/20 mx-1"></div>
+
+    <button id="btn-fullscreen" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Tela Cheia (F)">
+      <i data-lucide="maximize" class="w-4 h-4"></i>
+    </button>
+
+    <button id="btn-print" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Exportar / Imprimir PDF (Ctrl+P)">
+      <i data-lucide="printer" class="w-4 h-4"></i>
+    </button>
+
+    <button id="btn-help" class="p-2 rounded-full hover:bg-white/10 transition-colors text-white/80 hover:text-white" title="Atalhos do Teclado (?)">
+      <i data-lucide="keyboard" class="w-4 h-4"></i>
+    </button>
+  </nav>
+
+  <!-- ==========================================
+       SLIDE OVERVIEW MODAL (GRID VIEW)
+       ========================================== -->
+  <div id="overview-modal" class="fixed inset-0 z-50 bg-[#0A0A14]/95 backdrop-blur-md hidden flex-col p-12 overflow-y-auto">
+    <div class="flex items-center justify-between mb-8 max-w-7xl mx-auto w-full">
+      <div>
+        <h2 class="text-3xl font-bold text-white">Visão Geral dos Slides</h2>
+        <p class="text-sm text-[#5D5D66] mt-1">Selecione qualquer slide para navegar</p>
+      </div>
+      <button id="btn-close-overview" class="p-2 rounded-xl bg-white/10 text-white hover:bg-white/20">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <div id="overview-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto w-full pb-12">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+
+  <!-- ==========================================
+       KEYBOARD SHORTCUTS HELP MODAL
+       ========================================== -->
+  <div id="help-modal" class="fixed inset-0 z-50 bg-[#0A0A14]/80 backdrop-blur-sm hidden items-center justify-center p-6">
+    <div class="bg-[#0A0A14] border border-[#272727] rounded-[24px] p-8 max-w-md w-full shadow-2xl">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i data-lucide="keyboard" class="w-5 h-5 text-[#350EFF]"></i>
+          Atalhos do Teclado
+        </h3>
+        <button id="btn-close-help" class="text-[#5D5D66] hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="space-y-3 text-sm">
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Próximo Slide</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">→ / Espaço / Enter</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Slide Anterior</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">← / Backspace</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Primeiro / Último</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">Home / End</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Visão Geral (Grid)</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">O / G</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Tela Cheia</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">F</span>
+        </div>
+        <div class="flex justify-between items-center py-2 border-b border-[#272727]">
+          <span class="text-[#5D5D66]">Exportar para PDF</span>
+          <span class="font-semibold bg-white/10 px-2 py-1 rounded text-white">Ctrl + P</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PRESENTATION ENGINE SCRIPT
+       ========================================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Presentation State
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const totalSlides = slides.length;
+    let currentSlide = 1;
+
+    const viewport = document.getElementById('presentation-viewport');
+    const stage = document.getElementById('slide-stage');
+    const indicator = document.getElementById('slide-indicator');
+    const overviewModal = document.getElementById('overview-modal');
+    const helpModal = document.getElementById('help-modal');
+    const overviewGrid = document.getElementById('overview-grid');
+
+    // 16:9 Scale-to-Fit Engine
+    function resizeStage() {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const targetW = 1920;
+      const targetH = 1080;
+
+      const scale = Math.min(vw / targetW, vh / targetH);
+      stage.style.transform = `scale(${scale})`;
+    }
+
+    window.addEventListener('resize', resizeStage);
+    resizeStage();
+
+    // Show slide by index (1-based)
+    function goToSlide(index) {
+      if (index < 1) index = 1;
+      if (index > totalSlides) index = totalSlides;
+
+      slides.forEach((slide, idx) => {
+        if (idx + 1 === index) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      currentSlide = index;
+      indicator.textContent = `${currentSlide} / ${totalSlides}`;
+      window.location.hash = `#${currentSlide}`;
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        goToSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        goToSlide(currentSlide - 1);
+      }
+    }
+
+    // Toggle Fullscreen
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => console.log(err));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    // Build Overview Grid
+    function populateOverview() {
+      overviewGrid.innerHTML = '';
+      slides.forEach((slide, idx) => {
+        const num = idx + 1;
+        const title = slide.getAttribute('data-title') || `Slide ${num}`;
+        const isDark = slide.classList.contains('bg-[#0A0A14]') || slide.classList.contains('bg-[#350EFF]');
+        const card = document.createElement('div');
+        card.className = `p-4 rounded-[16px] cursor-pointer transition-all duration-200 border text-left flex flex-col justify-between h-36 ${
+          num === currentSlide 
+            ? 'bg-[#350EFF] text-white border-white shadow-lg ring-2 ring-[#350EFF]' 
+            : 'bg-[#181824] text-[#E6E6EC] border-[#272727] hover:border-[#350EFF] hover:bg-[#202030]'
+        }`;
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold">${String(num).padStart(2, '0')}</span>
+            <span class="text-[10px] uppercase font-semibold px-1.5 py-0.5 rounded bg-white/10">${isDark ? 'DECK' : 'CONTENT'}</span>
+          </div>
+          <div class="font-bold text-sm line-clamp-2">${title}</div>
+          <div class="text-[10px] text-white/50">Ir para slide</div>
+        `;
+        card.addEventListener('click', () => {
+          goToSlide(num);
+          closeOverview();
+        });
+        overviewGrid.appendChild(card);
+      });
+      lucide.createIcons();
+    }
+
+    function openOverview() {
+      populateOverview();
+      overviewModal.classList.remove('hidden');
+      overviewModal.classList.add('flex');
+    }
+
+    function closeOverview() {
+      overviewModal.classList.add('hidden');
+      overviewModal.classList.remove('flex');
+    }
+
+    function toggleOverview() {
+      if (overviewModal.classList.contains('hidden')) {
+        openOverview();
+      } else {
+        closeOverview();
+      }
+    }
+
+    function toggleHelp() {
+      if (helpModal.classList.contains('hidden')) {
+        helpModal.classList.remove('hidden');
+        helpModal.classList.add('flex');
+      } else {
+        helpModal.classList.add('hidden');
+        helpModal.classList.remove('flex');
+      }
+    }
+
+    // Event Listeners
+    document.getElementById('btn-prev').addEventListener('click', prevSlide);
+    document.getElementById('btn-next').addEventListener('click', nextSlide);
+    document.getElementById('btn-fullscreen').addEventListener('click', toggleFullscreen);
+    document.getElementById('btn-overview').addEventListener('click', toggleOverview);
+    document.getElementById('btn-close-overview').addEventListener('click', closeOverview);
+    document.getElementById('btn-print').addEventListener('click', () => window.print());
+    document.getElementById('btn-help').addEventListener('click', toggleHelp);
+    document.getElementById('btn-close-help').addEventListener('click', () => {
+      helpModal.classList.add('hidden');
+      helpModal.classList.remove('flex');
+    });
+
+    // Keyboard Shortcuts
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeOverview();
+        helpModal.classList.add('hidden');
+        helpModal.classList.remove('flex');
+        return;
+      }
+
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter' || e.key === 'PageDown') {
+        e.preventDefault();
+        nextSlide();
+      } else if (e.key === 'ArrowLeft' || e.key === 'Backspace' || e.key === 'PageUp') {
+        e.preventDefault();
+        prevSlide();
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        goToSlide(1);
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        goToSlide(totalSlides);
+      } else if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+      } else if (e.key === 'o' || e.key === 'O' || e.key === 'g' || e.key === 'G') {
+        toggleOverview();
+      } else if (e.key === '?') {
+        toggleHelp();
+      }
+    });
+
+    // Initial Hash Check
+    if (window.location.hash) {
+      const hashNum = parseInt(window.location.hash.replace('#', ''));
+      if (!isNaN(hashNum) && hashNum >= 1 && hashNum <= totalSlides) {
+        goToSlide(hashNum);
+      }
+    }
+  </script>
+</body>
+</html>

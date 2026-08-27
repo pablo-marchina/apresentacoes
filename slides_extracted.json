@@ -1,0 +1,2043 @@
+[
+  {
+    "slide_number": 1,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "Inteli Academy",
+        "paragraphs": [
+          "Inteli Academy"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "FUNDAMENTOS DE IA APLICADA",
+        "paragraphs": [
+          "FUNDAMENTOS DE IA APLICADA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A2A",
+        "paragraphs": [
+          "A2A"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Agentes que colaboram",
+        "paragraphs": [
+          "Agentes que colaboram"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Como agentes descobrem capacidades, delegam tarefas e trocam resultados.",
+        "paragraphs": [
+          "Como agentes descobrem capacidades, delegam tarefas e trocam resultados."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "01",
+        "paragraphs": [
+          "01"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 2,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "Do problema à colaboração entre agentes",
+        "paragraphs": [
+          "Do problema à colaboração entre agentes"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "01",
+        "paragraphs": [
+          "01"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "O que é um agente?",
+        "paragraphs": [
+          "O que é um agente?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE VS. CHATBOT",
+        "paragraphs": [
+          "AGENTE VS. CHATBOT"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "02",
+        "paragraphs": [
+          "02"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Quando um agente precisa de outro?",
+        "paragraphs": [
+          "Quando um agente precisa de outro?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "SISTEMAS MULTI-AGENTE",
+        "paragraphs": [
+          "SISTEMAS MULTI-AGENTE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "03",
+        "paragraphs": [
+          "03"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A2A",
+        "paragraphs": [
+          "A2A"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "INTEROPERABILIDADE",
+        "paragraphs": [
+          "INTEROPERABILIDADE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "04",
+        "paragraphs": [
+          "04"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Como a conversa acontece?",
+        "paragraphs": [
+          "Como a conversa acontece?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "TASKS • MESSAGES • ARTIFACTS",
+        "paragraphs": [
+          "TASKS • MESSAGES • ARTIFACTS"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "05",
+        "paragraphs": [
+          "05"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A2A × MCP",
+        "paragraphs": [
+          "A2A × MCP"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE ↔ AGENTE / AGENTE ↔ FERRAMENTA",
+        "paragraphs": [
+          "AGENTE ↔ AGENTE / AGENTE ↔ FERRAMENTA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "2",
+        "paragraphs": [
+          "2"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 3,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "1",
+        "paragraphs": [
+          "1"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "O que é um agente?",
+        "paragraphs": [
+          "O que é um agente?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "ANTES DO A2A, PRECISAMOS DEFINIR O QUE ESTÁ SE COMUNICANDO",
+        "paragraphs": [
+          "ANTES DO A2A, PRECISAMOS DEFINIR O QUE ESTÁ SE COMUNICANDO"
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "3",
+        "paragraphs": [
+          "3"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 4,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "PONTO DE PARTIDA",
+        "paragraphs": [
+          "PONTO DE PARTIDA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Um agente recebe um objetivo e age sobre o ambiente",
+        "paragraphs": [
+          "Um agente recebe um objetivo e age sobre o ambiente"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "ENTRADA",
+        "paragraphs": [
+          "ENTRADA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Objetivo\n+ contexto",
+        "paragraphs": [
+          "Objetivo",
+          "+ contexto"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "DECISÃO",
+        "paragraphs": [
+          "DECISÃO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Planeja\n+ escolhe ações",
+        "paragraphs": [
+          "Planeja",
+          "+ escolhe ações"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AÇÃO",
+        "paragraphs": [
+          "AÇÃO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Ferramentas\n+ sistemas",
+        "paragraphs": [
+          "Ferramentas",
+          "+ sistemas"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "OBSERVA O RESULTADO",
+        "paragraphs": [
+          "OBSERVA O RESULTADO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "→ ajusta → tenta novamente → conclui",
+        "paragraphs": [
+          "→ ajusta → tenta novamente → conclui"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Agente ≠ apenas texto gerado. O diferencial é a capacidade de decidir e executar ações orientadas a um objetivo.",
+        "paragraphs": [
+          "Agente ≠ apenas texto gerado. O diferencial é a capacidade de decidir e executar ações orientadas a um objetivo."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "4",
+        "paragraphs": [
+          "4"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 5,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "A DISTINÇÃO",
+        "paragraphs": [
+          "A DISTINÇÃO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Chatbot responde. Agente persegue um objetivo.",
+        "paragraphs": [
+          "Chatbot responde. Agente persegue um objetivo."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "CHATBOT",
+        "paragraphs": [
+          "CHATBOT"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "• Reage à mensagem\n• Gera uma resposta\n• Fluxo curto\n• Baixa autonomia",
+        "paragraphs": [
+          "• Reage à mensagem",
+          "• Gera uma resposta",
+          "• Fluxo curto",
+          "• Baixa autonomia"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE",
+        "paragraphs": [
+          "AGENTE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "• Interpreta um objetivo\n• Planeja etapas\n• Usa ferramentas\n• Observa resultados\n• Pode delegar",
+        "paragraphs": [
+          "• Interpreta um objetivo",
+          "• Planeja etapas",
+          "• Usa ferramentas",
+          "• Observa resultados",
+          "• Pode delegar"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Pergunta-chave: “Quem decide o próximo passo?”",
+        "paragraphs": [
+          "Pergunta-chave: “Quem decide o próximo passo?”"
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "5",
+        "paragraphs": [
+          "5"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 6,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "2",
+        "paragraphs": [
+          "2"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Quando um agente precisa de outro?",
+        "paragraphs": [
+          "Quando um agente precisa de outro?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "O PROBLEMA APARECE QUANDO UMA TAREFA COMBINA ESPECIALISTAS DIFERENTES",
+        "paragraphs": [
+          "O PROBLEMA APARECE QUANDO UMA TAREFA COMBINA ESPECIALISTAS DIFERENTES"
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "6",
+        "paragraphs": [
+          "6"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 7,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "SISTEMA MULTI-AGENTE",
+        "paragraphs": [
+          "SISTEMA MULTI-AGENTE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Dividir para especializar",
+        "paragraphs": [
+          "Dividir para especializar"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Um agente pode coordenar um trabalho maior sem executar todas as capacidades sozinho.",
+        "paragraphs": [
+          "Um agente pode coordenar um trabalho maior sem executar todas as capacidades sozinho."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE ORQUESTRADOR",
+        "paragraphs": [
+          "AGENTE ORQUESTRADOR"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Pesquisa",
+        "paragraphs": [
+          "Pesquisa"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "busca e síntese",
+        "paragraphs": [
+          "busca e síntese"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Finanças",
+        "paragraphs": [
+          "Finanças"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "cálculo e regras",
+        "paragraphs": [
+          "cálculo e regras"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Especialista",
+        "paragraphs": [
+          "Especialista"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "domínio específico",
+        "paragraphs": [
+          "domínio específico"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Agora surge a pergunta: como esses agentes se encontram e se entendem?",
+        "paragraphs": [
+          "Agora surge a pergunta: como esses agentes se encontram e se entendem?"
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "7",
+        "paragraphs": [
+          "7"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 8,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "O GARGALO",
+        "paragraphs": [
+          "O GARGALO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Sem um padrão, a colaboração vira integração artesanal",
+        "paragraphs": [
+          "Sem um padrão, a colaboração vira integração artesanal"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE A",
+        "paragraphs": [
+          "AGENTE A"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "JSON próprio",
+        "paragraphs": [
+          "JSON próprio"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE B",
+        "paragraphs": [
+          "AGENTE B"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "API específica",
+        "paragraphs": [
+          "API específica"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE C",
+        "paragraphs": [
+          "AGENTE C"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Formato proprietário",
+        "paragraphs": [
+          "Formato proprietário"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE D",
+        "paragraphs": [
+          "AGENTE D"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Outro framework",
+        "paragraphs": [
+          "Outro framework"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Cada par de agentes precisa conhecer detalhes do outro.",
+        "paragraphs": [
+          "Cada par de agentes precisa conhecer detalhes do outro."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Resultado:",
+        "paragraphs": [
+          "Resultado:"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "acoplamento • duplicação • baixa interoperabilidade",
+        "paragraphs": [
+          "acoplamento • duplicação • baixa interoperabilidade"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "A2A propõe uma linguagem comum para agentes independentes colaborarem.",
+        "paragraphs": [
+          "A2A propõe uma linguagem comum para agentes independentes colaborarem."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "8",
+        "paragraphs": [
+          "8"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 9,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "3",
+        "paragraphs": [
+          "3"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A2A",
+        "paragraphs": [
+          "A2A"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "UM PADRÃO ABERTO PARA INTEROPERABILIDADE ENTRE AGENTES",
+        "paragraphs": [
+          "UM PADRÃO ABERTO PARA INTEROPERABILIDADE ENTRE AGENTES"
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "9",
+        "paragraphs": [
+          "9"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 10,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "DEFINIÇÃO",
+        "paragraphs": [
+          "DEFINIÇÃO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A2A = Agent2Agent",
+        "paragraphs": [
+          "A2A = Agent2Agent"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Um padrão aberto para que agentes independentes descubram capacidades, troquem mensagens e gerenciem tarefas sem expor sua implementação interna.",
+        "paragraphs": [
+          "Um padrão aberto para que agentes independentes descubram capacidades, troquem mensagens e gerenciem tarefas sem expor sua implementação interna."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "DESCOBRIR",
+        "paragraphs": [
+          "DESCOBRIR"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "“O que você sabe fazer?”",
+        "paragraphs": [
+          "“O que você sabe fazer?”"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "DELEGAR",
+        "paragraphs": [
+          "DELEGAR"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "“Execute esta tarefa.”",
+        "paragraphs": [
+          "“Execute esta tarefa.”"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "RECEBER",
+        "paragraphs": [
+          "RECEBER"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "“Aqui está o resultado.”",
+        "paragraphs": [
+          "“Aqui está o resultado.”"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "O agente remoto pode continuar sendo uma “caixa-preta”: o cliente não precisa conhecer seus modelos, ferramentas ou memória.",
+        "paragraphs": [
+          "O agente remoto pode continuar sendo uma “caixa-preta”: o cliente não precisa conhecer seus modelos, ferramentas ou memória."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Fonte: A2A Protocol — especificação v1.0.0 (documentação oficial).",
+        "paragraphs": [
+          "Fonte: A2A Protocol — especificação v1.0.0 (documentação oficial)."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "10",
+        "paragraphs": [
+          "10"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 11,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "01 • DISCOVERY",
+        "paragraphs": [
+          "01 • DISCOVERY"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Antes de conversar, descubra o agente",
+        "paragraphs": [
+          "Antes de conversar, descubra o agente"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "O Agent Card descreve a identidade e as capacidades oferecidas pelo agente.",
+        "paragraphs": [
+          "O Agent Card descreve a identidade e as capacidades oferecidas pelo agente."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENT CARD",
+        "paragraphs": [
+          "AGENT CARD"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "name: \"Travel Agent\"\ndescription: \"Planeja viagens\"\nskills:\n  • buscar_voo\n  • comparar_hotel\n  • montar_roteiro",
+        "paragraphs": [
+          "name: \"Travel Agent\"",
+          "description: \"Planeja viagens\"",
+          "skills:",
+          "  • buscar_voo",
+          "  • comparar_hotel",
+          "  • montar_roteiro"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "PERGUNTA",
+        "paragraphs": [
+          "PERGUNTA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "“Você consegue fazer isso?”",
+        "paragraphs": [
+          "“Você consegue fazer isso?”"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "→ descobre capacidades\n→ decide se vale delegar",
+        "paragraphs": [
+          "→ descobre capacidades",
+          "→ decide se vale delegar"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Fonte: A2A Protocol v1.0.0 — Agent Card / AgentCard.",
+        "paragraphs": [
+          "Fonte: A2A Protocol v1.0.0 — Agent Card / AgentCard."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "11",
+        "paragraphs": [
+          "11"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 12,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "02 • INTERACTION MODEL",
+        "paragraphs": [
+          "02 • INTERACTION MODEL"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A unidade de trabalho é a Task",
+        "paragraphs": [
+          "A unidade de trabalho é a Task"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "MESSAGE",
+        "paragraphs": [
+          "MESSAGE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "instrui / atualiza",
+        "paragraphs": [
+          "instrui / atualiza"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "TASK",
+        "paragraphs": [
+          "TASK"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "controla o trabalho",
+        "paragraphs": [
+          "controla o trabalho"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "ARTIFACT",
+        "paragraphs": [
+          "ARTIFACT"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "entrega o resultado",
+        "paragraphs": [
+          "entrega o resultado"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Exemplo de ciclo",
+        "paragraphs": [
+          "Exemplo de ciclo"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "“Busque um hotel em São Paulo”",
+        "paragraphs": [
+          "“Busque um hotel em São Paulo”"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "TASK: working",
+        "paragraphs": [
+          "TASK: working"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "ARTIFACT: opções.json",
+        "paragraphs": [
+          "ARTIFACT: opções.json"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Mensagens carregam comunicação; o resultado da tarefa pode ser entregue como Artifact.",
+        "paragraphs": [
+          "Mensagens carregam comunicação; o resultado da tarefa pode ser entregue como Artifact."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Fonte: A2A Protocol v1.0.0 — Messages, Tasks e Artifacts.",
+        "paragraphs": [
+          "Fonte: A2A Protocol v1.0.0 — Messages, Tasks e Artifacts."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "12",
+        "paragraphs": [
+          "12"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 13,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "03 • LIFECYCLE",
+        "paragraphs": [
+          "03 • LIFECYCLE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Uma Task tem estado — não é só uma requisição",
+        "paragraphs": [
+          "Uma Task tem estado — não é só uma requisição"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "submitted",
+        "paragraphs": [
+          "submitted"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "recebida",
+        "paragraphs": [
+          "recebida"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "working",
+        "paragraphs": [
+          "working"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "processando",
+        "paragraphs": [
+          "processando"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "input-required",
+        "paragraphs": [
+          "input-required"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "precisa de informação",
+        "paragraphs": [
+          "precisa de informação"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "completed",
+        "paragraphs": [
+          "completed"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "resultado pronto",
+        "paragraphs": [
+          "resultado pronto"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Isso permite tarefas longas, assíncronas e com atualizações de progresso.",
+        "paragraphs": [
+          "Isso permite tarefas longas, assíncronas e com atualizações de progresso."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "STREAMING",
+        "paragraphs": [
+          "STREAMING"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "atualizações em tempo real",
+        "paragraphs": [
+          "atualizações em tempo real"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "PUSH",
+        "paragraphs": [
+          "PUSH"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "notificação para tarefas longas",
+        "paragraphs": [
+          "notificação para tarefas longas"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "RETRY / RESUME",
+        "paragraphs": [
+          "RETRY / RESUME"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "acompanhar o mesmo trabalho",
+        "paragraphs": [
+          "acompanhar o mesmo trabalho"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Fonte: A2A Protocol v1.0.0 — Task lifecycle e streaming.",
+        "paragraphs": [
+          "Fonte: A2A Protocol v1.0.0 — Task lifecycle e streaming."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "13",
+        "paragraphs": [
+          "13"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 14,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "4",
+        "paragraphs": [
+          "4"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Como os agentes conversam?",
+        "paragraphs": [
+          "Como os agentes conversam?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A2A ORGANIZA DESCOBERTA, INTERAÇÃO, ESTADO E ENTREGA",
+        "paragraphs": [
+          "A2A ORGANIZA DESCOBERTA, INTERAÇÃO, ESTADO E ENTREGA"
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "14",
+        "paragraphs": [
+          "14"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 15,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "ARQUITETURA",
+        "paragraphs": [
+          "ARQUITETURA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "O agente remoto continua independente",
+        "paragraphs": [
+          "O agente remoto continua independente"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE CLIENTE",
+        "paragraphs": [
+          "AGENTE CLIENTE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "LLM\n+ ferramentas\n+ estado local",
+        "paragraphs": [
+          "LLM",
+          "+ ferramentas",
+          "+ estado local"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "A2A",
+        "paragraphs": [
+          "A2A"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "HTTP(S) • mensagens • tasks",
+        "paragraphs": [
+          "HTTP(S) • mensagens • tasks"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE REMOTO",
+        "paragraphs": [
+          "AGENTE REMOTO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "“caixa-preta”\nLLM + tools\n+ dados próprios",
+        "paragraphs": [
+          "“caixa-preta”",
+          "LLM + tools",
+          "+ dados próprios"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "O cliente conhece o contrato de interação — não a implementação interna do agente remoto.",
+        "paragraphs": [
+          "O cliente conhece o contrato de interação — não a implementação interna do agente remoto."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Fonte: A2A Protocol v1.0.0 — interoperabilidade entre agentes independentes.",
+        "paragraphs": [
+          "Fonte: A2A Protocol v1.0.0 — interoperabilidade entre agentes independentes."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "15",
+        "paragraphs": [
+          "15"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 16,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "A COMPARAÇÃO QUE MAIS GERA DÚVIDA",
+        "paragraphs": [
+          "A COMPARAÇÃO QUE MAIS GERA DÚVIDA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A2A × MCP",
+        "paragraphs": [
+          "A2A × MCP"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "MCP",
+        "paragraphs": [
+          "MCP"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE ↔ FERRAMENTA / CONTEXTO\n\nEx.: banco, API, arquivo, sistema interno\n\nFoco: fornecer capacidades e contexto ao agente",
+        "paragraphs": [
+          "AGENTE ↔ FERRAMENTA / CONTEXTO",
+          "Ex.: banco, API, arquivo, sistema interno",
+          "Foco: fornecer capacidades e contexto ao agente"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "A2A",
+        "paragraphs": [
+          "A2A"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE ↔ AGENTE\n\nEx.: agente financeiro, agente de viagens\n\nFoco: descoberta, delegação e colaboração",
+        "paragraphs": [
+          "AGENTE ↔ AGENTE",
+          "Ex.: agente financeiro, agente de viagens",
+          "Foco: descoberta, delegação e colaboração"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "Pense assim: MCP conecta o agente ao que ele usa. A2A conecta o agente a quem ele colabora.",
+        "paragraphs": [
+          "Pense assim: MCP conecta o agente ao que ele usa. A2A conecta o agente a quem ele colabora."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "16",
+        "paragraphs": [
+          "16"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 17,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "CASO PRÁTICO",
+        "paragraphs": [
+          "CASO PRÁTICO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "“Planeje uma viagem para São Paulo”",
+        "paragraphs": [
+          "“Planeje uma viagem para São Paulo”"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Um único pedido pode virar várias tarefas especializadas.",
+        "paragraphs": [
+          "Um único pedido pode virar várias tarefas especializadas."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "ORQUESTRADOR",
+        "paragraphs": [
+          "ORQUESTRADOR"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "VOO",
+        "paragraphs": [
+          "VOO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "buscar opções",
+        "paragraphs": [
+          "buscar opções"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "HOTEL",
+        "paragraphs": [
+          "HOTEL"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "comparar preços",
+        "paragraphs": [
+          "comparar preços"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "TRANSPORTE",
+        "paragraphs": [
+          "TRANSPORTE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "estimar deslocamento",
+        "paragraphs": [
+          "estimar deslocamento"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "O orquestrador não precisa saber como cada especialista calcula seu resultado.",
+        "paragraphs": [
+          "O orquestrador não precisa saber como cada especialista calcula seu resultado."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "17",
+        "paragraphs": [
+          "17"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 18,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "NÃO É MÁGICA",
+        "paragraphs": [
+          "NÃO É MÁGICA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "A2A resolve interoperabilidade — não resolve todos os problemas",
+        "paragraphs": [
+          "A2A resolve interoperabilidade — não resolve todos os problemas"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "SEGURANÇA",
+        "paragraphs": [
+          "SEGURANÇA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "quem pode delegar o quê?",
+        "paragraphs": [
+          "quem pode delegar o quê?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "CONFIANÇA",
+        "paragraphs": [
+          "CONFIANÇA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "como validar o resultado?",
+        "paragraphs": [
+          "como validar o resultado?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "CUSTO",
+        "paragraphs": [
+          "CUSTO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "mais agentes = mais chamadas",
+        "paragraphs": [
+          "mais agentes = mais chamadas"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "LATÊNCIA",
+        "paragraphs": [
+          "LATÊNCIA"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "mais etapas podem atrasar",
+        "paragraphs": [
+          "mais etapas podem atrasar"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "OBSERVABILIDADE",
+        "paragraphs": [
+          "OBSERVABILIDADE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "como rastrear a cadeia?",
+        "paragraphs": [
+          "como rastrear a cadeia?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "A pergunta de arquitetura deixa de ser “qual agente?” e passa a ser “qual colaboração vale a pena?”",
+        "paragraphs": [
+          "A pergunta de arquitetura deixa de ser “qual agente?” e passa a ser “qual colaboração vale a pena?”"
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "18",
+        "paragraphs": [
+          "18"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 19,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "ATIVIDADE",
+        "paragraphs": [
+          "ATIVIDADE"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Desenhe seu primeiro sistema multi-agente",
+        "paragraphs": [
+          "Desenhe seu primeiro sistema multi-agente"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Cenário: um sistema de atendimento para uma empresa de tecnologia.",
+        "paragraphs": [
+          "Cenário: um sistema de atendimento para uma empresa de tecnologia."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "01",
+        "paragraphs": [
+          "01"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Quais agentes existem?",
+        "paragraphs": [
+          "Quais agentes existem?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "02",
+        "paragraphs": [
+          "02"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Qual agente orquestra?",
+        "paragraphs": [
+          "Qual agente orquestra?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "03",
+        "paragraphs": [
+          "03"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Quando cada agente recebe uma Task?",
+        "paragraphs": [
+          "Quando cada agente recebe uma Task?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "04",
+        "paragraphs": [
+          "04"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "O que é Message? O que é Artifact?",
+        "paragraphs": [
+          "O que é Message? O que é Artifact?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "05",
+        "paragraphs": [
+          "05"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Que informação aparece no Agent Card?",
+        "paragraphs": [
+          "Que informação aparece no Agent Card?"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "DESAFIO",
+        "paragraphs": [
+          "DESAFIO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Justifique\npor que cada\nagente existe.",
+        "paragraphs": [
+          "Justifique",
+          "por que cada",
+          "agente existe."
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "19",
+        "paragraphs": [
+          "19"
+        ]
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 20,
+    "elements": [
+      {
+        "type": "Shape",
+        "text": "A ideia central",
+        "paragraphs": [
+          "A ideia central"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Agentes não precisam\nfazer tudo sozinhos.",
+        "paragraphs": [
+          "Agentes não precisam",
+          "fazer tudo sozinhos."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Com A2A, eles podem descobrir capacidades,\ndelegar trabalho e trocar resultados.",
+        "paragraphs": [
+          "Com A2A, eles podem descobrir capacidades,",
+          "delegar trabalho e trocar resultados."
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "",
+        "paragraphs": []
+      },
+      {
+        "type": "Shape",
+        "text": "AGENTE  →  AGENTE  →  RESULTADO",
+        "paragraphs": [
+          "AGENTE  →  AGENTE  →  RESULTADO"
+        ]
+      },
+      {
+        "type": "Shape",
+        "text": "Fonte técnica: A2A Protocol v1.0.0",
+        "paragraphs": [
+          "Fonte técnica: A2A Protocol v1.0.0"
+        ]
+      },
+      {
+        "type": "SlidePlaceholder",
+        "text": "20",
+        "paragraphs": [
+          "20"
+        ]
+      }
+    ],
+    "notes": ""
+  }
+]
